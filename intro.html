@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SolanaMC Intro</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+
+  <style>
+    @keyframes popFade {
+      0% {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      30% {
+        opacity: 1;
+        transform: scale(1.1);
+      }
+      60% {
+        transform: scale(1);
+      }
+      100% {
+        opacity: 0;
+        transform: scale(1);
+      }
+    }
+
+    .logo-animation {
+      animation: popFade 3s ease-in-out forwards;
+    }
+
+    .animated-bg {
+      background: radial-gradient(circle at center, #F8E39E 0%, #A78BFA 40%, #0F0F0F 100%);
+      background-size: 300% 300%;
+      animation: gradientShift 8s ease-in-out infinite;
+    }
+
+    @keyframes gradientShift {
+      0%, 100% {
+        background-position: center center;
+      }
+      50% {
+        background-position: 60% 40%;
+      }
+    }
+  </style>
+
+
+
+
+       <section id="about-owner" class="snap-start min-h-screen flex items-center justify-center bg-white px-6 py-20 text-gray-900">
+  <div class="max-w-3xl w-full text-center space-y-6">
+    
+    <!-- Minecraft Head Placeholder -->
+    <div class="flex justify-center">
+      <img src="https://mc-heads.net/avatar/DreiWhite/128" alt="DreiWhite Minecraft Head"
+        class="w-28 h-28 rounded-lg shadow-lg border border-gray-300"
+        onerror="this.onerror=null;this.src='https://placehold.co/128x128/eeeeee/999999?text=No+Skin';">
+    </div>
+
+    <!-- Owner Name -->
+    <h2 class="text-3xl md:text-4xl font-bold">Meet <span class="text-indigo-600">DreiWhite</span></h2>
+
+    <!-- Description -->
+    <p class="text-lg text-gray-700 leading-relaxed">
+      DreiWhite is the founder and heart of <span class="font-semibold text-indigo-500">SolanaMC</span>. A longtime Minecraft enthusiast and community builder, DreiWhite created the server with one goal in mind — to build a fair, engaging, and unforgettable experience for all players.
+    </p>
+
+    <p class="text-lg text-gray-700 leading-relaxed">
+      Known for being both creative and approachable, DreiWhite leads the server with passion, transparency, and a commitment to player happiness. From maintaining balance in the economy to organizing community events and ensuring smooth gameplay, he’s always present — sometimes behind the scenes, sometimes right in-game.
+    </p>
+
+    <p class="text-md text-gray-500 italic">
+      “I built SolanaMC not just as a server, but as a home for anyone who loves Minecraft.” – DreiWhite
+    </p>
+  </div>
+</section>
+
+
+<section id="about-owner" class="snap-start min-h-screen flex items-center justify-center bg-white px-6 py-24 text-gray-900">
+  <div class="max-w-3xl w-full text-center space-y-6">
+    
+    <!-- Minecraft Avatar -->
+    <img src="https://mc-heads.net/avatar/DreiWhite/128" alt="DreiWhite Minecraft Head"
+      class="mx-auto w-20 h-20 rounded-md border border-gray-200 shadow-sm"
+      onerror="this.onerror=null;this.src='https://placehold.co/128x128?text=No+Skin';">
+
+    <!-- Heading -->
+    <h2 class="text-4xl font-bold">DreiWhite</h2>
+    <p class="text-sm text-gray-500 uppercase tracking-widest">Owner of SolanaMC</p>
+
+    <!-- Description -->
+    <p class="text-gray-700 text-lg leading-relaxed">
+      Passionate about creating a space where players can thrive, build, and connect — DreiWhite founded SolanaMC with a vision: a balanced and vibrant Minecraft server that puts the community first.
+    </p>
+
+    <p class="text-gray-700 text-lg leading-relaxed">
+      Whether you’re exploring, trading, or fighting mobs, he ensures every aspect of the server is smooth, fair, and fun. Always present, always listening — DreiWhite is more than just an admin; he's part of the world you play in.
+    </p>
+
+    <!-- Signature Quote -->
+    <p class="italic text-gray-500 text-base">
+      “Built by the players, for the players.” – DreiWhite
+    </p>
+  </div>
+</section>
+
+</head>
+<body class="animated-bg flex items-center justify-center h-screen">
+
+  <!-- Logo Animation -->
+  <div id="introLogo" class="logo-animation">
+    <img src="/assets/biglogo1.png" alt="SolanaMC Logo" class="w-60 sm:w-80 drop-shadow-xl" />
+  </div>
+
+  <!-- Redirect script -->
+  <script>
+    setTimeout(() => {
+      window.location.href = "index.html"; // Change to your actual main file
+    }, 3100); // match animation duration
+  </script>
+
+</body>
+</html>

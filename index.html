@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Solanamc.net</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/index.css" />
-    <link rel="icon" href="/assets/logo.png" type="image/x-icon" />
-  </head>
 
-  <body class="relative overflow-hidden smooth-scroll">
-    <!-- 🔥 Video Background (shared across header + main) -->
-    <!-- <video
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solanamc.net</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/index.css" />
+  <link rel="icon" href="/assets/logo.png" type="image/x-icon" />
+</head>
+
+<body class="bg-black text-white">
+
+  <!-- 🔥 Video Background (shared across header + main) -->
+  <!-- <video
       autoplay
       muted
       loop
@@ -22,14 +24,12 @@
       Your browser does not support the video tag.
     </video> -->
 
-    <!-- 🔲 Blur Overlay -->
-    <div
-      class="fixed top-0 left-0 w-full h-[910px] bg-black/40 backdrop-blur-sm z-[-1]"
-    ></div>
+  <!-- 🔲 Blur Overlay -->
+  <div class="fixed top-0 left-0 w-full h-[910px] bg-black/40 backdrop-blur-sm z-[-1]"></div>
 
-    <!-- 🔝 Header -->
-     <div id="pageContent" class="relative z-10 opacity-0 transition-opacity duration-1000 delay-300">
-<header id="mainHeader" class="transition-colors duration-300">
+  <!-- 🔝 Header -->
+  <div id="pageContent" class="relative z-10 opacity-0 transition-opacity duration-1000 delay-300">
+    <header id="mainHeader" class="transition-colors duration-300">
 
       <div class="mx-auto max-w-screen-xxl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
@@ -37,17 +37,13 @@
             <a class="block text-teal-600" href="section1" id="section1">
               <span class="sr-only">Home</span>
               <!-- Logo SVG -->
-              <img
-                src="/assets/SolanaMC_Text.png"
-                alt=""
-                class="max-w-[190px]"
-              />
+              <img src="/assets/SolanaMC_Text.png" alt="" class="max-w-[190px]" />
             </a>
           </div>
 
           <div class="hidden md:block">
             <nav aria-label="Global">
-             <ul id="navLinks" class="flex items-center gap-6 text-sm text-white transition-colors duration-300">
+              <ul id="navLinks" class="flex items-center gap-6 text-sm text-white transition-colors duration-300">
 
                 <li>
                   <a class="hover:text-gray-200 transition" href="#section2" id="section2">Features</a>
@@ -59,14 +55,10 @@
                   <a class="hover:text-gray-200 transition" href="#section4" id="section4">About us</a>
                 </li>
                 <li>
-                  <a class="hover:text-gray-200 transition" href="#"
-                    >Services</a
-                  >
+                  <a class="hover:text-gray-200 transition" href="#">Services</a>
                 </li>
                 <li>
-                  <a class="hover:text-gray-200 transition" href="#"
-                    >Projects</a
-                  >
+                  <a class="hover:text-gray-200 transition" href="#">Projects</a>
                 </li>
                 <li>
                   <a class="hover:text-gray-200 transition" href="#">Blog</a>
@@ -77,32 +69,18 @@
 
           <div class="flex items-center gap-4">
             <div class="sm:flex sm:gap-4">
-              <a
-                class="rounded-md px-5 py-2.5 text-sm font-medium text-gray-900 shadow-sm transition bg-[#F8E39E] hover:bg-[#e9d37d]"
-                href="#"
-              >
+              <a class="rounded-md px-5 py-2.5 text-sm font-medium text-gray-900 shadow-sm transition bg-[#F8E39E] hover:bg-[#e9d37d]"
+                href="#">
                 Play with us
               </a>
 
               <div class="hidden sm:flex"></div>
             </div>
             <div class="block md:hidden">
-              <button
-                class="rounded-sm bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="size-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
+              <button class="rounded-sm bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
+                <svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               </button>
             </div>
@@ -111,101 +89,460 @@
       </div>
     </header>
 
-  <!-- <main class="snap-y snap-mandatory h-screen overflow-y-scroll scroll-smooth"> -->
-<main class=" h-screen overflow-y-scroll scroll-smooth bg-black">
+    <!-- <main class="snap-y snap-mandatory h-screen overflow-y-scroll scroll-smooth"> -->
+<main class="scroll-smooth bg-black">
+
+
+      
+
+      <!-- Section 1 -->
+      <!-- Section 1: Transparent (Video shows through) -->
+      <section id="section1"
+        class="snap-start h-screen flex items-center px-8 sm:px-12 lg:px-20 text-white bg-transparent">
+
+
+        <div class="max-w-xl">
+          <h1 class="text-4xl font-bold sm:text-5xl leading-tight">
+            Welcome to <span class="text-[#F8E39E]">SolanaMC</span><br />
+            The Future of Minecraft on the Solana Chain
+          </h1>
+          <p class="mt-4 text-base text-gray-200 sm:text-lg">
+            Join a next-gen Minecraft experience powered by the speed of Solana.
+            Dive into play-to-earn adventures, custom-built worlds, and an active community like no other.
+          </p>
+          <div class="mt-6 flex gap-4">
+            <a class="inline-block rounded bg-[#F8E39E] text-gray-900 px-6 py-3 font-semibold shadow-sm transition hover:bg-[#e9d37d]"
+              href="#">Play Now</a>
+            <a class="inline-block rounded border border-white/30 px-6 py-3 font-semibold text-white shadow-sm transition hover:bg-white/10"
+              href="#">Explore Features</a>
+          </div>
+        </div>
+      </section>
+
+
+
+
+<section id="about-owner" class="snap-start min-h-screen flex items-center justify-center px-6 py-24 bg-white text-gray-900">
+  <div class="max-w-5xl w-full flex flex-col md:flex-row items-start gap-10">
     
-  <!-- Section 1 -->
-<!-- Section 1: Transparent (Video shows through) -->
-<section id="section1" class="snap-start h-screen flex items-center px-8 sm:px-12 lg:px-20 text-white bg-transparent">
-
-
-    <div class="max-w-xl">
-      <h1 class="text-4xl font-bold sm:text-5xl leading-tight">
-        Welcome to <span class="text-[#F8E39E]">SolanaMC</span><br />
-        The Future of Minecraft on the Solana Chain
-      </h1>
-      <p class="mt-4 text-base text-gray-200 sm:text-lg">
-        Join a next-gen Minecraft experience powered by the speed of Solana.
-        Dive into play-to-earn adventures, custom-built worlds, and an active community like no other.
-      </p>
-      <div class="mt-6 flex gap-4">
-        <a class="inline-block rounded bg-[#F8E39E] text-gray-900 px-6 py-3 font-semibold shadow-sm transition hover:bg-[#e9d37d]" href="#">Play Now</a>
-        <a class="inline-block rounded border border-white/30 px-6 py-3 font-semibold text-white shadow-sm transition hover:bg-white/10" href="#">Explore Features</a>
-      </div>
+    <!-- Avatar Section -->
+    <div class="flex-shrink-0">
+      <img src="https://mc-heads.net/avatar/DreiWhite/128" alt="DreiWhite Minecraft Head"
+        class="w-28 h-28 rounded-lg shadow border border-gray-300"
+        onerror="this.onerror=null;this.src='https://placehold.co/128x128?text=No+Skin';">
     </div>
-  </section>
 
-  <!-- Section 2 -->
-<!-- Section 2: White background -->
-<section id="section2" class="snap-start h-screen flex items-center justify-center text-gray-900 px-4 bg-white">
+    <!-- Text Section -->
+    <div class="space-y-5 text-left">
+      <h2 class="text-4xl font-bold">Meet <span class="text-indigo-600">DreiWhite</span></h2>
+      <p class="text-sm text-gray-500 uppercase tracking-wider">Founder & Server Owner of SolanaMC</p>
 
-
-    <div class="text-center max-w-2xl">
-      <h2 class="text-4xl font-bold">Features</h2>
-      <p class="mt-4 text-gray-200">
-        Custom NFTs, token economy, survival worlds, and mini-games with real rewards.
+      <p class="text-gray-700 text-base leading-relaxed">
+        DreiWhite is more than just a Minecraft player — he's a builder of digital worlds, a leader of a growing community, and the creative mind behind everything SolanaMC stands for. His journey began not with a massive team or a budget, but with a passion to create something meaningful. What started as a small server experiment turned into a full-fledged community loved by players for its fairness, creativity, and active vibe.
       </p>
-    </div>
-  </section>
 
-  <!-- Section 3 -->
-  <!-- Section 3: White background -->
-<section class="snap-start h-screen flex items-center justify-center text-gray-900 px-4 bg-white">
+      <p class="text-gray-700 text-base leading-relaxed">
+        From plugin configuration to in-game event hosting, DreiWhite wears many hats. He's known for being present, listening to feedback, and responding to players — not with bots or prewritten replies, but with honest conversations and real improvements. His priority has always been to create a Minecraft experience that feels fresh yet familiar, where every player feels seen and valued.
+      </p>
 
-    <div class="text-center max-w-2xl">
-      <h2 class="text-4xl font-bold">Community</h2>
-      <p class="mt-4 text-gray-200">
-        A vibrant, friendly, and competitive player base. Be part of the next big thing.
+      <p class="text-gray-700 text-base leading-relaxed">
+        The server's focus on fair gameplay, zero pay-to-win mechanics, and an evolving world of community-led features reflects his belief that a great server isn’t just about performance or plugins — it’s about the people who play on it. Under DreiWhite’s leadership, SolanaMC has grown into a home for builders, adventurers, redstone engineers, and casual players alike.
+      </p>
+
+      <p class="text-gray-700 text-base leading-relaxed">
+        He continues to push updates, organize creative events, and implement thoughtful mechanics that give players something to look forward to every time they log in. Whether it's enhancing survival gameplay or building an in-server economy that feels natural and player-driven, his eye for balance and dedication to fun is clear in every block placed.
+      </p>
+
+      <p class="italic text-gray-500 text-base">
+        “SolanaMC isn’t about being the biggest — it’s about being the most genuine.” — DreiWhite
       </p>
     </div>
-  </section>
-
-
-  <!-- Section 4: White background -->
-<!-- Section 4: White background -->
-<section class="snap-start h-screen flex items-center justify-center text-gray-900 px-4 bg-white">
-  <div class="text-center max-w-2xl">
-    <h2 class="text-4xl font-bold">Join Now</h2>
-    <p class="mt-4 text-gray-200">
-      Become a pioneer of blockchain gaming. Join us today and shape the world of SolanaMC.
-    </p>
-   <div class="mt-6 flex flex-col sm:flex-row sm:justify-center sm:gap-4 space-y-4 sm:space-y-0">
-  <!-- Join the Server Button -->
-  <a
-    class="inline-flex items-center justify-center rounded bg-[#F8E39E] text-gray-900 px-8 py-3 font-semibold shadow-sm transition hover:bg-[#e9d37d] w-full sm:w-auto"
-    href="#"
-  >
-    Join the Server
-  </a>
-
-  <!-- Discord Button -->
-  <a
-    class="inline-flex items-center justify-center gap-2 rounded border-2 border-[#F8E39E] text-[#F8E39E] px-8 py-3 font-semibold transition hover:bg-[#F8E39E] hover:text-gray-900 w-full sm:w-auto"
-    href="https://discord.gg/your-invite-code"
-    target="_blank"
-  >
-    <!-- Discord SVG Icon -->
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M20.317 4.369a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.078.037c-.211.375-.444.864-.608 1.249a18.27 18.27 0 0 0-5.487 0 12.236 12.236 0 0 0-.622-1.25.075.075 0 0 0-.078-.036A19.736 19.736 0 0 0 3.682 4.37a.07.07 0 0 0-.032.027C.533 9.041-.319 13.579.099 18.057a.08.08 0 0 0 .031.054 19.9 19.9 0 0 0 5.993 3.029.077.077 0 0 0 .084-.027c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.104 13.12 13.12 0 0 1-1.872-.9.075.075 0 0 1-.008-.124c.126-.095.252-.193.374-.291a.076.076 0 0 1 .079-.01c3.927 1.793 8.18 1.793 12.061 0a.076.076 0 0 1 .08.01c.122.098.248.196.374.291a.075.075 0 0 1-.006.124 12.378 12.378 0 0 1-1.873.899.076.076 0 0 0-.04.105c.36.7.772 1.365 1.225 1.994a.076.076 0 0 0 .084.028 19.9 19.9 0 0 0 6.002-3.03.077.077 0 0 0 .031-.053c.5-5.177-.838-9.673-3.548-13.662a.06.06 0 0 0-.031-.028zM8.02 15.331c-1.183 0-2.156-1.085-2.156-2.419 0-1.333.955-2.418 2.157-2.418 1.21 0 2.174 1.093 2.156 2.418 0 1.334-.955 2.419-2.157 2.419zm7.974 0c-1.183 0-2.156-1.085-2.156-2.419 0-1.333.955-2.418 2.156-2.418 1.21 0 2.175 1.093 2.157 2.418 0 1.334-.947 2.419-2.157 2.419z"/>
-    </svg>
-    Join our Discord
-  </a>
-</div>
-
   </div>
 </section>
 
 
-<section id="section-team" class="snap-start relative min-h-screen flex flex-col items-center justify-center bg-white px-4 py-20 text-center overflow-hidden">
-  <!-- Title & Subtitle -->
-  <h2 class="text-4xl font-bold mb-4 z-10">Meet Our Team</h2>
-  <p class="text-gray-600 max-w-2xl mb-12 z-10">
-    We’re a dedicated team of staff, moderators, and server owners working behind the scenes to bring you the best Minecraft experience possible. From building and coding to moderating and managing events, everything we do reflects our passion, creativity, and commitment to the community.
+
+
+
+
+    
+      <!-- Section 2: White background -->
+      <section id="section2" class="snap-start h-screen flex items-center justify-center text-gray-900 px-4 bg-white">
+        <div class="text-center max-w-4xl w-full">
+
+          <!-- Main Heading -->
+          <h2 class="text-4xl md:text-5xl font-bold">Your Next Minecraft Adventure Starts Here</h2>
+
+          <!-- Subheading -->
+          <p class="mt-4 text-gray-600 max-w-2xl mx-auto text-lg">
+            Join the most dynamic and community-driven server, packed with custom features, epic events, and an economy
+            that never sleeps.
+          </p>
+
+          <!-- Image/Video Container -->
+          <div class="relative mt-8 max-w-4xl mx-auto">
+            <!-- The image from your upload -->
+            <img src="/assets/solandamc (1).gif" alt="Minecraft characters in a game world"
+              class="rounded-2xl shadow-xl w-full"
+              onerror="this.onerror=null;this.src='https://placehold.co/1024x576/e2e8f0/4a5568?text=Image+Not+Found';">
+
+            <!-- Play Button Overlay -->
+            <div class="absolute inset-0 flex items-center justify-center">
+              <button
+                class="bg-white/30 backdrop-blur-sm p-4 rounded-full transition-transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Caption below the image -->
+          <p class="mt-6 text-gray-700 font-semibold text-lg">
+            Watch how SolanaMC players experience the world like never before.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <!-- Section 3: White background -->
+      <section class="h-screen flex items-center justify-center text-gray-900 px-4 bg-white">
+        <div class="text-center max-w-6xl w-full">
+          <!-- Main Heading -->
+          <h2 class="text-4xl md:text-5xl font-bold">What Can We Offer You</h2>
+
+          <!-- Subheading -->
+          <p class="mt-4 text-gray-600 max-w-3xl mx-auto text-lg">
+            We offer a one-of-a-kind Minecraft experience built around quality, creativity, and community. Every feature
+            on our server is carefully designed to give you a smooth, fun, and memorable gameplay journey — whether
+            you're a casual player or a competitive adventurer.
+          </p>
+
+          <!-- Features Grid -->
+          <div class="mt-16 grid md:grid-cols-3 gap-x-12 gap-y-8">
+            <!-- Feature 1: Custom Enchants -->
+            <div class="flex flex-col items-center">
+              <img src="/assets/images1/pic1.png" class="h-[85px] w-[100px]">
+              <h3 class="text-2xl font-bold mb-2">Custom Enchants</h3>
+              <p class="text-gray-600">We specialize in buying and selling high-quality, marketable furniture, each
+                piece reflecting our unique aesthetic.</p>
+            </div>
+            <!-- Feature 2: Pyro Fishing -->
+            <div class="flex flex-col items-center">
+              <img src="/assets/images1/pic2.png" class="h-[100px] w-[90px]">
+              <h3 class="text-2xl font-bold mb-2">Pyro Fishing</h3>
+              <p class="text-gray-600">We specialize in buying and selling high-quality, marketable furniture, each
+                piece reflecting our unique aesthetic.</p>
+            </div>
+            <!-- Feature 3: Custom Crops -->
+            <div class="flex flex-col items-center">
+              <img src="/assets/images1/pic3.png" class="h-[100px] w-[90px]">
+              <h3 class="text-2xl font-bold mb-2">Custom Crops</h3>
+              <p class="text-gray-600">We specialize in buying and selling high-quality, marketable furniture, each
+                piece reflecting our unique aesthetic.</p>
+            </div>
+          </div>
+
+          <!-- Testimonials Grid -->
+          <div class="mt-20 grid md:grid-cols-3 gap-x-12 text-center">
+            <!-- Testimonial 1 -->
+            <div class="flex flex-col items-center">
+              <img src="/assets/images1/pic4.png" class="h-[100px] w-[90px]">
+              <p class="text-gray-700 italic">"We love Landingfolio! Our designers were using it for their projects, so
+                clients already knew what Landingfolio was and how to use it."</p>
+              
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="flex flex-col items-center">
+              <img src="/assets/images1/pic5.png" class="h-[100px] w-[90px]">
+              <p class="text-gray-700 italic">"I didn't know designing in Webflow could be this individualized. I'd
+                never considered it before, but Landingfolio changed my mind."</p>
+              
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="flex flex-col items-center">
+              <img src="/assets/images1/pic6.png" class="h-[100px] w-[90px]">
+              <p class="text-gray-700 italic">"We love Landingfolio! Our designers were using it for their projects, so
+                clients already knew what Landingfolio was and how to use it."</p>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+     <section id="faq" class="snap-start min-h-screen flex flex-col items-center justify-center bg-white px-4 py-20 text-center">
+  <!-- Title -->
+  <h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Frequently Asked Questions</h2>
+  <p class="text-gray-600 max-w-xl mx-auto mb-12 text-lg">
+    Everything you need to know about playing and enjoying SolanaMC.
   </p>
 
-  <!-- Background Dots Scattered Across Section -->
+  <!-- FAQ Accordion -->
+  <div class="w-full max-w-2xl space-y-4 text-left">
+    <!-- Question 1 -->
+    <details class="group [&_summary::-webkit-details-marker]:hidden border rounded-md bg-gray-50 shadow-sm">
+      <summary class="flex cursor-pointer items-center justify-between p-4 font-medium text-gray-900 hover:bg-green-50 transition">
+        <span>How do I join SolanaMC?</span>
+        <svg class="size-5 shrink-0 transition-transform duration-300 group-open:-rotate-180 text-green-600"
+          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M19 9l-7 7-7-7" />
+        </svg>
+      </summary>
+      <p class="px-4 pb-4 text-gray-700">
+        Launch Minecraft Java Edition, go to Multiplayer, click “Add Server” and use our IP: <strong>play.solanamc.net</strong>.
+      </p>
+    </details>
+
+    <!-- Question 2 -->
+    <details class="group [&_summary::-webkit-details-marker]:hidden border rounded-md bg-gray-50 shadow-sm">
+      <summary class="flex cursor-pointer items-center justify-between p-4 font-medium text-gray-900 hover:bg-green-50 transition">
+        <span>Is SolanaMC cracked or premium?</span>
+        <svg class="size-5 shrink-0 transition-transform duration-300 group-open:-rotate-180 text-green-600"
+          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M19 9l-7 7-7-7" />
+        </svg>
+      </summary>
+      <p class="px-4 pb-4 text-gray-700">
+        SolanaMC supports <strong>both cracked and premium accounts</strong>, so everyone is welcome to join!
+      </p>
+    </details>
+
+    <!-- Question 3 -->
+    <details class="group [&_summary::-webkit-details-marker]:hidden border rounded-md bg-gray-50 shadow-sm">
+      <summary class="flex cursor-pointer items-center justify-between p-4 font-medium text-gray-900 hover:bg-green-50 transition">
+        <span>What game modes are available?</span>
+        <svg class="size-5 shrink-0 transition-transform duration-300 group-open:-rotate-180 text-green-600"
+          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M19 9l-7 7-7-7" />
+        </svg>
+      </summary>
+      <p class="px-4 pb-4 text-gray-700">
+        We offer unique modes like <strong>Survival SMP</strong>, <strong>Skyblock</strong>, and seasonal events.
+        More features are coming soon!
+      </p>
+    </details>
+  </div>
+</section>
+
+
+
+    
+
+
+      <section id="section-team"
+        class="snap-start relative min-h-screen flex flex-col items-center justify-center bg-white px-4 py-20 text-center overflow-hidden">
+        <!-- Title & Subtitle -->
+        <h2 class="text-4xl font-bold mb-4 z-10 text text-black">Meet Our Team</h2>
+        <p class="text-gray-600 max-w-2xl mb-12 z-10">
+          We’re a dedicated team of staff, moderators, and server owners working behind the scenes to bring you the best
+          Minecraft experience possible. From building and coding to moderating and managing events, everything we do
+          reflects our passion, creativity, and commitment to the community.
+        </p>
+
+        <div class="absolute inset-0 z-0 pointer-events-none">
+          <!-- Original balls -->
+          <div class="absolute w-3 h-3 bg-yellow-300 rounded-full top-[10%] left-[15%]"></div>
+          <div class="absolute w-4 h-4 bg-green-400 rounded-full top-[20%] right-[10%]"></div>
+          <div class="absolute w-3.5 h-3.5 bg-pink-400 rounded-full bottom-[18%] left-[12%]"></div>
+          <div class="absolute w-2.5 h-2.5 bg-blue-400 rounded-full bottom-[12%] right-[20%]"></div>
+          <div class="absolute w-3 h-3 bg-purple-400 rounded-full top-[45%] left-[60%]"></div>
+          <div class="absolute w-2 h-2 bg-green-300 rounded-full left-[25%] top-[55%]"></div>
+          <div class="absolute w-4 h-4 bg-purple-300 rounded-full right-[28%] bottom-[30%]"></div>
+          <div class="absolute w-2 h-2 bg-pink-300 rounded-full left-[33%] bottom-[20%]"></div>
+          <div class="absolute w-2.5 h-2.5 bg-blue-200 rounded-full top-[6%] left-[70%]"></div>
+          <div class="absolute w-2 h-2 bg-red-300 rounded-full top-[35%] right-[12%]"></div>
+          <div class="absolute w-3.5 h-3.5 bg-yellow-200 rounded-full bottom-[8%] left-[42%]"></div>
+          <div class="absolute w-3 h-3 bg-green-200 rounded-full bottom-[6%] right-[6%]"></div>
+
+          <!-- Additional balls -->
+          <div class="absolute w-2.5 h-2.5 bg-blue-300 rounded-full top-[25%] left-[5%]"></div>
+          <div class="absolute w-3 h-3 bg-pink-200 rounded-full top-[40%] right-[18%]"></div>
+          <div class="absolute w-4 h-4 bg-yellow-400 rounded-full bottom-[40%] left-[8%]"></div>
+          <div class="absolute w-2 h-2 bg-red-200 rounded-full top-[15%] right-[25%]"></div>
+          <div class="absolute w-3.5 h-3.5 bg-purple-200 rounded-full bottom-[45%] left-[65%]"></div>
+          <div class="absolute w-2.5 h-2.5 bg-green-100 rounded-full top-[32%] left-[78%]"></div>
+          <div class="absolute w-2 h-2 bg-blue-100 rounded-full bottom-[25%] right-[15%]"></div>
+          <div class="absolute w-3 h-3 bg-pink-100 rounded-full bottom-[15%] left-[50%]"></div>
+          <div class="absolute w-2.5 h-2.5 bg-yellow-100 rounded-full top-[8%] right-[40%]"></div>
+          <div class="absolute w-2 h-2 bg-purple-100 rounded-full bottom-[10%] left-[75%]"></div>
+          <div class="absolute w-2 h-2 bg-green-200 rounded-full top-[50%] right-[5%]"></div>
+          <div class="absolute w-3 h-3 bg-blue-300 rounded-full bottom-[35%] left-[20%]"></div>
+        </div>
+
+
+        <!-- Sliding Team Cards -->
+        <div class="relative z-10 overflow-x-auto w-full max-w-9xl min-h-[250px] hide-scrollbar">
+
+
+          <div class="flex gap-12 w-[200%] animate-slide">
+            <!-- Duplicate set for seamless loop -->
+            <div class="flex gap-12">
+              <!-- 10 Team Cards -->
+              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center">
+                <div class="w-[100px] h-[100px] bg-pink-100 rounded-full flex items-center justify-center mb-2">
+                  <img src="/assets/skinmc-avatar (5) 1.png" alt="Fuujin" class="w-14 h-14 rounded-full" />
+                </div>
+                <h3 class="font-semibold">Fuujin</h3>
+                <span class="text-xs bg-red-100 text-red-500 px-2 py-0.5 rounded">Admin</span>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center rotate-[-6deg]">
+                <div class="w-[100px] h-[100px] bg-green-100 rounded-full flex items-center justify-center mb-2">
+                  <img src="/assets/skinmc-avatar (5) 1.png" alt="Tenshi" class="w-14 h-14 rounded-full" />
+                </div>
+                <h3 class="font-semibold">Tenshi</h3>
+                <span class="text-xs bg-pink-100 text-pink-500 px-2 py-0.5 rounded">Admin</span>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center">
+                <div class="w-[100px] h-[100px] bg-blue-100 rounded-full flex items-center justify-center mb-2">
+                  <img src="/assets/skinmc-avatar (5) 1.png" alt="Dreiwhite" class="w-14 h-14 rounded-full" />
+                </div>
+                <h3 class="font-semibold">Dreiwhite</h3>
+                <span class="text-xs bg-blue-100 text-blue-500 px-2 py-0.5 rounded">Owner</span>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center rotate-[6deg]">
+                <div class="w-[100px] h-[100px] bg-purple-100 rounded-full flex items-center justify-center mb-2">
+                  <img src="/assets/skinmc-avatar (5) 1.png" alt="Bella" class="w-14 h-14 rounded-full" />
+                </div>
+                <h3 class="font-semibold">Bella</h3>
+                <span class="text-xs bg-purple-100 text-purple-500 px-2 py-0.5 rounded">Owner</span>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center">
+                <div class="w-[100px] h-[100px] bg-yellow-100 rounded-full flex items-center justify-center mb-2">
+                  <img src="/assets/skinmc-avatar (5) 1.png" alt="Warren" class="w-14 h-14 rounded-full" />
+                </div>
+                <h3 class="font-semibold">Warren</h3>
+                <span class="text-xs bg-yellow-100 text-yellow-500 px-2 py-0.5 rounded">Admin</span>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center">
+                <div class="w-[100px] h-[100px] bg-red-100 rounded-full flex items-center justify-center mb-2">
+                  <img src="/assets/skinmc-avatar (5) 1.png" alt="Kai" class="w-14 h-14 rounded-full" />
+                </div>
+                <h3 class="font-semibold">Kai</h3>
+                <span class="text-xs bg-red-100 text-red-500 px-2 py-0.5 rounded">Mod</span>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center rotate-[-4deg]">
+                <div class="w-[100px] h-[100px] bg-indigo-100 rounded-full flex items-center justify-center mb-2">
+                  <img src="/assets/skinmc-avatar (5) 1.png" alt="Rei" class="w-14 h-14 rounded-full" />
+                </div>
+                <h3 class="font-semibold">Rei</h3>
+                <span class="text-xs bg-indigo-100 text-indigo-500 px-2 py-0.5 rounded">Staff</span>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center">
+                <div class="w-[100px] h-[100px] bg-lime-100 rounded-full flex items-center justify-center mb-2">
+                  <img src="/assets/skinmc-avatar (5) 1.png" alt="Niko" class="w-14 h-14 rounded-full" />
+                </div>
+                <h3 class="font-semibold">Niko</h3>
+                <span class="text-xs bg-lime-100 text-lime-500 px-2 py-0.5 rounded">Helper</span>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center rotate-[4deg]">
+                <div class="w-[100px] h-[100px] bg-cyan-100 rounded-full flex items-center justify-center mb-2">
+                  <img src="/assets/skinmc-avatar (5) 1.png" alt="Aiko" class="w-14 h-14 rounded-full" />
+                </div>
+                <h3 class="font-semibold">Aiko</h3>
+                <span class="text-xs bg-cyan-100 text-cyan-500 px-2 py-0.5 rounded">Admin</span>
+              </div>
+            </div>
+
+            <!-- Duplicate the same set of 10 cards for looping -->
+            <div class="flex gap-12">
+              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center">
+                <div class="w-[100px] h-[100px] bg-pink-100 rounded-full flex items-center justify-center mb-2">
+                  <img src="/assets/skinmc-avatar (5) 1.png" alt="Fuujin" class="w-14 h-14 rounded-full" />
+                </div>
+                <h3 class="font-semibold">Fuujin</h3>
+                <span class="text-xs bg-red-100 text-red-500 px-2 py-0.5 rounded">Admin</span>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center rotate-[-6deg]">
+                <div class="w-[100px] h-[100px] bg-green-100 rounded-full flex items-center justify-center mb-2">
+                  <img src="/assets/skinmc-avatar (5) 1.png" alt="Tenshi" class="w-14 h-14 rounded-full" />
+                </div>
+                <h3 class="font-semibold">Tenshi</h3>
+                <span class="text-xs bg-pink-100 text-pink-500 px-2 py-0.5 rounded">Admin</span>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center">
+                <div class="w-[100px] h-[100px] bg-blue-100 rounded-full flex items-center justify-center mb-2">
+                  <img src="/assets/skinmc-avatar (5) 1.png" alt="Dreiwhite" class="w-14 h-14 rounded-full" />
+                </div>
+                <h3 class="font-semibold">Dreiwhite</h3>
+                <span class="text-xs bg-blue-100 text-blue-500 px-2 py-0.5 rounded">Owner</span>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center rotate-[6deg]">
+                <div class="w-[100px] h-[100px] bg-purple-100 rounded-full flex items-center justify-center mb-2">
+                  <img src="/assets/skinmc-avatar (5) 1.png" alt="Bella" class="w-14 h-14 rounded-full" />
+                </div>
+                <h3 class="font-semibold">Bella</h3>
+                <span class="text-xs bg-purple-100 text-purple-500 px-2 py-0.5 rounded">Owner</span>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center">
+                <div class="w-[100px] h-[100px] bg-yellow-100 rounded-full flex items-center justify-center mb-2">
+                  <img src="/assets/skinmc-avatar (5) 1.png" alt="Warren" class="w-14 h-14 rounded-full" />
+                </div>
+                <h3 class="font-semibold">Warren</h3>
+                <span class="text-xs bg-yellow-100 text-yellow-500 px-2 py-0.5 rounded">Admin</span>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center">
+                <div class="w-[100px] h-[100px] bg-red-100 rounded-full flex items-center justify-center mb-2">
+                  <img src="/assets/skinmc-avatar (5) 1.png" alt="Kai" class="w-14 h-14 rounded-full" />
+                </div>
+                <h3 class="font-semibold">Kai</h3>
+                <span class="text-xs bg-red-100 text-red-500 px-2 py-0.5 rounded">Mod</span>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center rotate-[-4deg]">
+                <div class="w-[100px] h-[100px] bg-indigo-100 rounded-full flex items-center justify-center mb-2">
+                  <img src="/assets/skinmc-avatar (5) 1.png" alt="Rei" class="w-14 h-14 rounded-full" />
+                </div>
+                <h3 class="font-semibold">Rei</h3>
+                <span class="text-xs bg-indigo-100 text-indigo-500 px-2 py-0.5 rounded">Staff</span>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center">
+                <div class="w-[100px] h-[100px] bg-lime-100 rounded-full flex items-center justify-center mb-2">
+                  <img src="/assets/skinmc-avatar (5) 1.png" alt="Niko" class="w-14 h-14 rounded-full" />
+                </div>
+                <h3 class="font-semibold">Niko</h3>
+                <span class="text-xs bg-lime-100 text-lime-500 px-2 py-0.5 rounded">Helper</span>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center rotate-[4deg]">
+                <div class="w-[100px] h-[100px] bg-cyan-100 rounded-full flex items-center justify-center mb-2">
+                  <img src="/assets/skinmc-avatar (5) 1.png" alt="Aiko" class="w-14 h-14 rounded-full" />
+                </div>
+                <h3 class="font-semibold">Aiko</h3>
+                <span class="text-xs bg-cyan-100 text-cyan-500 px-2 py-0.5 rounded">Admin</span>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+  </section>
+
+<section class="relative snap-start h-screen flex items-center justify-center text-gray-900 px-4 bg-white overflow-hidden">
+
+  <!-- 🎈 Floating Decorative Balls -->
   <div class="absolute inset-0 z-0 pointer-events-none">
-    <!-- Scattered Colored Dots -->
+    <!-- Original balls -->
     <div class="absolute w-3 h-3 bg-yellow-300 rounded-full top-[10%] left-[15%]"></div>
     <div class="absolute w-4 h-4 bg-green-400 rounded-full top-[20%] right-[10%]"></div>
     <div class="absolute w-3.5 h-3.5 bg-pink-400 rounded-full bottom-[18%] left-[12%]"></div>
@@ -218,173 +555,190 @@
     <div class="absolute w-2 h-2 bg-red-300 rounded-full top-[35%] right-[12%]"></div>
     <div class="absolute w-3.5 h-3.5 bg-yellow-200 rounded-full bottom-[8%] left-[42%]"></div>
     <div class="absolute w-3 h-3 bg-green-200 rounded-full bottom-[6%] right-[6%]"></div>
+
+    <!-- Additional balls -->
+    <div class="absolute w-2.5 h-2.5 bg-blue-300 rounded-full top-[25%] left-[5%]"></div>
+    <div class="absolute w-3 h-3 bg-pink-200 rounded-full top-[40%] right-[18%]"></div>
+    <div class="absolute w-4 h-4 bg-yellow-400 rounded-full bottom-[40%] left-[8%]"></div>
+    <div class="absolute w-2 h-2 bg-red-200 rounded-full top-[15%] right-[25%]"></div>
+    <div class="absolute w-3.5 h-3.5 bg-purple-200 rounded-full bottom-[45%] left-[65%]"></div>
+    <div class="absolute w-2.5 h-2.5 bg-green-100 rounded-full top-[32%] left-[78%]"></div>
+    <div class="absolute w-2 h-2 bg-blue-100 rounded-full bottom-[25%] right-[15%]"></div>
+    <div class="absolute w-3 h-3 bg-pink-100 rounded-full bottom-[15%] left-[50%]"></div>
+    <div class="absolute w-2.5 h-2.5 bg-yellow-100 rounded-full top-[8%] right-[40%]"></div>
+    <div class="absolute w-2 h-2 bg-purple-100 rounded-full bottom-[10%] left-[75%]"></div>
+    <div class="absolute w-2 h-2 bg-green-200 rounded-full top-[50%] right-[5%]"></div>
+    <div class="absolute w-3 h-3 bg-blue-300 rounded-full bottom-[35%] left-[20%]"></div>
   </div>
 
-  <!-- Team Cards -->
-  <div class="relative z-10 flex flex-wrap justify-center gap-12 max-w-5xl">
-    <!-- Fuujin -->
-    <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center">
-      <div class="w-[100px] h-[100px] bg-pink-100 rounded-full flex items-center justify-center mb-2">
-        <img src="/assets/skinmc-avatar (5) 1.png" alt="Fuujin" class="w-14 h-14 rounded-full" />
-      </div>
-      <h3 class="font-semibold">Fuujin</h3>
-      <span class="text-xs bg-red-100 text-red-500 px-2 py-0.5 rounded">Admin</span>
+  <!-- 🌟 Main Content -->
+  <div class="text-center max-w-2xl z-10">
+    <!-- 🔰 Logo -->
+    <img src="/assets/biglogo1.png" alt="SolanaMC Logo" class="mx-auto mb-8" />
+
+    <h2 class="text-4xl font-bold">Join Now</h2>
+    <p class="mt-4 text-gray-600">
+      Become a pioneer of blockchain gaming. Join us today and shape the world of SolanaMC.
+    </p>
+
+    <!-- 🏷️ Server Tags -->
+    <div class="flex flex-wrap justify-center gap-2 mt-4 text-sm">
+      <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full font-medium">24/7 Online</span>
+      <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-medium">SMP Server</span>
+      <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full font-medium">Friendly Community</span>
+      <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full font-medium">100+ Player Capacity</span>
     </div>
 
-    <!-- Tenshi -->
-    <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center rotate-[-6deg]">
-      <div class="w-[100px] h-[100px] bg-green-100 rounded-full flex items-center justify-center mb-2">
-        <img src="/assets/skinmc-avatar (5) 1.png" alt="Tenshi" class="w-14 h-14 rounded-full" />
-      </div>
-      <h3 class="font-semibold">Tenshi</h3>
-      <span class="text-xs bg-pink-100 text-pink-500 px-2 py-0.5 rounded">Admin</span>
-    </div>
+    <!-- 🎮 Buttons -->
+    <div class="mt-6 flex flex-col sm:flex-row sm:justify-center sm:gap-4 space-y-4 sm:space-y-0">
+      <a class="inline-flex items-center justify-center rounded bg-[#F8E39E] text-gray-900 px-8 py-3 font-semibold shadow-sm transition hover:bg-[#e9d37d] w-full sm:w-auto" href="#">
+        Join the Server
+      </a>
 
-    <!-- Dreiwhite -->
-    <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center">
-      <div class="w-[100px] h-[100px] bg-blue-100 rounded-full flex items-center justify-center mb-2">
-        <img src="/assets/skinmc-avatar (5) 1.png" alt="Dreiwhite" class="w-14 h-14 rounded-full" />
-      </div>
-      <h3 class="font-semibold">Dreiwhite</h3>
-      <span class="text-xs bg-blue-100 text-blue-500 px-2 py-0.5 rounded">Owner</span>
-    </div>
-
-    <!-- Bella -->
-    <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center rotate-[6deg]">
-      <div class="w-[100px] h-[100px] bg-purple-100 rounded-full flex items-center justify-center mb-2">
-        <img src="/assets/skinmc-avatar (5) 1.png" alt="Bella" class="w-14 h-14 rounded-full" />
-      </div>
-      <h3 class="font-semibold">Bella</h3>
-      <span class="text-xs bg-purple-100 text-purple-500 px-2 py-0.5 rounded">Owner</span>
-    </div>
-
-    <!-- Warren -->
-    <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center">
-      <div class="w-[100px] h-[100px] bg-yellow-100 rounded-full flex items-center justify-center mb-2">
-        <img src="/assets/skinmc-avatar (5) 1.png" alt="Warren" class="w-14 h-14 rounded-full" />
-      </div>
-      <h3 class="font-semibold">Warren</h3>
-      <span class="text-xs bg-yellow-100 text-yellow-500 px-2 py-0.5 rounded">Admin</span>
+      <a class="inline-flex items-center justify-center gap-2 rounded border-2 border-[#F8E39E] text-[#F8E39E] px-8 py-3 font-semibold transition hover:bg-[#F8E39E] hover:text-gray-900 w-full sm:w-auto" href="https://discord.gg/your-invite-code" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M20.317 4.369a19.791...z" />
+        </svg>
+        Join our Discord
+      </a>
     </div>
   </div>
 </section>
 
 
-<footer class="bg-zinc-800 text-gray-300 font-sans p-8 md:p-10 mb-7">
+
+
+  <footer class="bg-zinc-800 text-gray-300 font-sans p-8 md:p-10">
     <div class="container mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
 
-            <div class="lg:col-span-2">
-                <div class="w-36 h-36 mb-5 flex flex-col items-center justify-center  text-zinc-500">
-          
-                    <span class="text-sm mt-1 text-center"><img src="/assets/logo.png" alt=""></span>
-                </div>
-                <p class="text-gray-400 leading-relaxed mb-6 max-w-md">
-                    We specialize in buying and selling high-quality, marketable furniture, each piece reflecting our unique aesthetic.
-                </p>
-                <div>
-                    <h4 class="font-semibold text-white mb-3">Send me Email</h4>
-                    <div class="flex items-center bg-zinc-700 rounded-lg p-3 max-w-xs">
-                        <svg class="w-5 h-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
-                        </svg>
-                        <span class="ml-3 text-gray-500">dreiwhite@gmail.com</span>
-                    </div>
-                </div>
-            </div>
+        <div class="lg:col-span-2">
+          <div class="w-36 h-36 mb-5 flex flex-col items-center justify-center  text-zinc-500">
 
-            <div>
-                <h3 class="text-lg font-semibold text-white mb-4">Quick Menu</h3>
-                <ul class="space-y-3">
-                    <li><a href="#" class="hover:text-white transition-colors">Home</a></li>
-                    <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
-                    <li><a href="#" class="hover:text-white transition-colors">Collections</a></li>
-                    <li><a href="#" class="hover:text-white transition-colors">Our Team</a></li>
-                    <li><a href="#" class="hover:text-white transition-colors">Contact Us</a></li>
-                </ul>
+            <span class="text-sm mt-1 text-center"><img src="/assets/logo.png" alt=""></span>
+          </div>
+          <p class="text-gray-400 leading-relaxed mb-6 max-w-md">
+            We specialize in buying and selling high-quality, marketable furniture, each piece reflecting our unique
+            aesthetic.
+          </p>
+          <div>
+            <h4 class="font-semibold text-white mb-3">Send me Email</h4>
+            <div class="flex items-center bg-zinc-700 rounded-lg p-3 max-w-xs">
+              <svg class="w-5 h-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+              </svg>
+              <span class="ml-3 text-gray-500">dreiwhite@gmail.com</span>
             </div>
-
-            <div>
-                <h3 class="text-lg font-semibold text-white mb-4">Legal</h3>
-                <ul class="space-y-3">
-                    <li><a href="#" class="hover:text-white transition-colors">Privacy policy</a></li>
-                    <li><a href="#" class="hover:text-white transition-colors">Terms and Conditions</a></li>
-                    <li><a href="#" class="hover:text-white transition-colors">Cookies Policy</a></li>
-                </ul>
-            </div>
+          </div>
         </div>
 
-        <hr class="border-zinc-700 my-8">
-
-        <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
-            <span class="text-sm text-gray-400">© 2025 Copyright by Fuujin</span>
-            <div class="flex items-center gap-3">
-                <a href="#" class="flex items-center gap-2 bg-zinc-700 hover:bg-zinc-600 transition-colors px-4 py-2 rounded-full text-sm">
-                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/></svg>
-                    @dreiwhite
-                </a>
-                <a href="#" class="flex items-center gap-2 bg-zinc-700 hover:bg-zinc-600 transition-colors px-4 py-2 rounded-full text-sm">
-                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8s.01 2.444.048 3.297c.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299C15.96 3.85 15.826 3.268 15.628 2.76a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 8 0Zm0 1.442c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.282.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.47 2.47 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.231s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.843-.038 1.096-.047 3.232-.047ZM8 4.908a3.092 3.092 0 1 0 0 6.184 3.092 3.092 0 0 0 0-6.184Zm0 5.068a2 2 0 1 1 0-4 2 2 0 0 1 0 4Zm4.965-5.325a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/></svg>
-                    @dreiwhite
-                </a>
-                <a href="#" class="flex items-center gap-2 bg-zinc-700 hover:bg-zinc-600 transition-colors px-4 py-2 rounded-full text-sm">
-                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0 0 3.603 0 8.05C0 12.006 2.923 15.223 6.75 15.969V10.398h-2V8.05h2V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.348H9.25V15.97C13.077 15.223 16 12.006 16 8.049Z"/></svg>
-                    @dreiwhite
-                </a>
-            </div>
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">Quick Menu</h3>
+          <ul class="space-y-3">
+            <li><a href="#" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Collections</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Our Team</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Contact Us</a></li>
+          </ul>
         </div>
+
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">Legal</h3>
+          <ul class="space-y-3">
+            <li><a href="#" class="hover:text-white transition-colors">Privacy policy</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Terms and Conditions</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Cookies Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="border-zinc-700 my-8">
+
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+        <span class="text-sm text-gray-400">© 2025 Copyright by Fuujin</span>
+        <div class="flex items-center gap-3">
+          <a href="#"
+            class="flex items-center gap-2 bg-zinc-700 hover:bg-zinc-600 transition-colors px-4 py-2 rounded-full text-sm">
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+              <path
+                d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z" />
+            </svg>
+            @dreiwhite
+          </a>
+          <a href="#"
+            class="flex items-center gap-2 bg-zinc-700 hover:bg-zinc-600 transition-colors px-4 py-2 rounded-full text-sm">
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8s.01 2.444.048 3.297c.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299C15.96 3.85 15.826 3.268 15.628 2.76a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 8 0Zm0 1.442c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.282.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.47 2.47 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.231s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.843-.038 1.096-.047 3.232-.047ZM8 4.908a3.092 3.092 0 1 0 0 6.184 3.092 3.092 0 0 0 0-6.184Zm0 5.068a2 2 0 1 1 0-4 2 2 0 0 1 0 4Zm4.965-5.325a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z" />
+            </svg>
+            @dreiwhite
+          </a>
+          <a href="#"
+            class="flex items-center gap-2 bg-zinc-700 hover:bg-zinc-600 transition-colors px-4 py-2 rounded-full text-sm">
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0 0 3.603 0 8.05C0 12.006 2.923 15.223 6.75 15.969V10.398h-2V8.05h2V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.348H9.25V15.97C13.077 15.223 16 12.006 16 8.049Z" />
+            </svg>
+            @dreiwhite
+          </a>
+        </div>
+      </div>
     </div>
-</footer>
+  </footer>
 
 
-</main>
+  </main>
 
-    </div>
+  </div>
 
-<script>
-
-  
-window.addEventListener("DOMContentLoaded", () => {
-  const page = document.getElementById("pageContent");
-  const header = document.getElementById("mainHeader");
-  const navLinks = document.getElementById("navLinks");
-  const section2 = document.getElementById("section2");
-  const main = document.querySelector("main");
-
-  requestAnimationFrame(() => {
-    page.classList.add("opacity-100");
-  });
-
-  const handleScroll = () => {
-    const rect = section2.getBoundingClientRect();
-
-    // If Section 2 is visible
-    if (rect.top <= window.innerHeight * 0.5) {
-      header.classList.add("bg-white", "shadow", "text-gray-900");
-      header.classList.remove("text-white");
-
-      navLinks.classList.remove("text-white");
-      navLinks.classList.add("text-gray-900");
-    } else {
-      header.classList.remove("bg-white", "shadow", "text-gray-900");
-      header.classList.add("text-white");
-
-      navLinks.classList.remove("text-gray-900");
-      navLinks.classList.add("text-white");
-    }
-  };
-
-  main.addEventListener("scroll", handleScroll);
-  handleScroll(); // Run once on load
-});
+  <script>
 
 
+    window.addEventListener("DOMContentLoaded", () => {
+      const page = document.getElementById("pageContent");
+      const header = document.getElementById("mainHeader");
+      const navLinks = document.getElementById("navLinks");
+      const section2 = document.getElementById("section2");
+      const main = document.querySelector("main");
 
+      requestAnimationFrame(() => {
+        page.classList.add("opacity-100");
+      });
 
-</script>
+      const handleScroll = () => {
+        const rect = section2.getBoundingClientRect();
+
+        // If Section 2 is visible
+        if (rect.top <= window.innerHeight * 0.5) {
+          header.classList.add("bg-white", "shadow", "text-gray-900");
+          header.classList.remove("text-white");
+
+          navLinks.classList.remove("text-white");
+          navLinks.classList.add("text-gray-900");
+        } else {
+          header.classList.remove("bg-white", "shadow", "text-gray-900");
+          header.classList.add("text-white");
+
+          navLinks.classList.remove("text-gray-900");
+          navLinks.classList.add("text-white");
+        }
+      };
+
+      main.addEventListener("scroll", handleScroll);
+      handleScroll(); // Run once on load
+    });
 
 
 
 
-  </body>
+  </script>
+
+
+
+
+</body>
+
 </html>
