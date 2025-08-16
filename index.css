@@ -1,5 +1,10 @@
   main::-webkit-scrollbar {
     display: none;
+        cursor: url('/assets/cursor.png') 4 4, auto;
+  }
+
+  body{
+    cursor: url('/assets/cursor.png') 4 4, auto;
   }
 
   main {
@@ -27,3 +32,6 @@
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;     /* Firefox */
 }
+
+
+

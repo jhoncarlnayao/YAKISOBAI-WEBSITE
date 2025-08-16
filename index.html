@@ -8,24 +8,12 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="/index.css" />
   <link rel="icon" href="/assets/logo.png" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/preline/dist/preline.css" />
+
 </head>
 
-<body class="bg-black text-white">
-
-  <!-- 🔥 Video Background (shared across header + main) -->
-  <!-- <video
-      autoplay
-      muted
-      loop
-      playsinline
-      class="fixed top-0 left-0 w-full h-[910px] object-cover z-[-2]"
-    >
-      <source src="/assets/solanamc (1).mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video> -->
-
-  <!-- 🔲 Blur Overlay -->
-  <div class="fixed top-0 left-0 w-full h-[910px] bg-black/40 backdrop-blur-sm z-[-1]"></div>
+<body class="bg-black text-white ">
 
   <!-- 🔝 Header -->
   <div id="pageContent" class="relative z-10 opacity-0 transition-opacity duration-1000 delay-300">
@@ -52,7 +40,7 @@
                   <a class="hover:text-gray-200 transition" href="#section3" id="section3">Community</a>
                 </li>
                 <li>
-                  <a class="hover:text-gray-200 transition" href="#section4" id="section4">About us testing</a>
+                  <a class="hover:text-gray-200 transition" href="#section4" id="section4">About us </a>
                 </li>
                 <li>
                   <a class="hover:text-gray-200 transition" href="#">Services</a>
@@ -95,29 +83,83 @@
 
       
 
-      <!-- Section 1 -->
-      <!-- Section 1: Transparent (Video shows through) -->
-      <section id="section1"
-        class="snap-start h-screen flex items-center px-8 sm:px-12 lg:px-20 text-white bg-transparent">
+  <!-- Section 1: Hero with Background Image -->
+<section id="section1"
+  class="snap-start h-screen flex items-center px-8 sm:px-12 lg:px-20 text-white 
+         bg-[url('/assets/background.jpg')] bg-cover bg-center relative overflow-hidden">
 
+  <!-- Overlay for better text visibility -->
+  <div class="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
 
-        <div class="max-w-xl">
-          <h1 class="text-4xl font-bold sm:text-5xl leading-tight">
-            Welcome to <span class="text-[#F8E39E]">SolanaMC</span><br />
-            The Future of Minecraft on the Solana Chain
-          </h1>
-          <p class="mt-4 text-base text-gray-200 sm:text-lg">
-            Join a next-gen Minecraft experience powered by the speed of Solana.
-            Dive into play-to-earn adventures, custom-built worlds, and an active community like no other.
-          </p>
-          <div class="mt-6 flex gap-4">
-            <a class="inline-block rounded bg-[#F8E39E] text-gray-900 px-6 py-3 font-semibold shadow-sm transition hover:bg-[#e9d37d]"
-              href="#">Play Now</a>
-            <a class="inline-block rounded border border-white/30 px-6 py-3 font-semibold text-white shadow-sm transition hover:bg-white/10"
-              href="#">Explore Features</a>
-          </div>
-        </div>
-      </section>
+  <!-- Particles Container -->
+  <div class="absolute inset-0 pointer-events-none">
+    <!-- 20 Particles -->
+    <span class="particle" style="left:5%; top:20%; animation-delay:0s;"></span>
+    <span class="particle" style="left:15%; top:40%; animation-delay:0.5s;"></span>
+    <span class="particle" style="left:25%; top:10%; animation-delay:1s;"></span>
+    <span class="particle" style="left:35%; top:60%; animation-delay:1.5s;"></span>
+    <span class="particle" style="left:45%; top:30%; animation-delay:2s;"></span>
+    <span class="particle" style="left:55%; top:50%; animation-delay:2.5s;"></span>
+    <span class="particle" style="left:65%; top:20%; animation-delay:3s;"></span>
+    <span class="particle" style="left:75%; top:40%; animation-delay:3.5s;"></span>
+    <span class="particle" style="left:85%; top:10%; animation-delay:4s;"></span>
+    <span class="particle" style="left:20%; top:70%; animation-delay:4.5s;"></span>
+    <span class="particle" style="left:30%; top:80%; animation-delay:5s;"></span>
+    <span class="particle" style="left:40%; top:65%; animation-delay:5.5s;"></span>
+    <span class="particle" style="left:50%; top:75%; animation-delay:6s;"></span>
+    <span class="particle" style="left:60%; top:55%; animation-delay:6.5s;"></span>
+    <span class="particle" style="left:70%; top:70%; animation-delay:7s;"></span>
+    <span class="particle" style="left:80%; top:80%; animation-delay:7.5s;"></span>
+    <span class="particle" style="left:10%; top:60%; animation-delay:8s;"></span>
+    <span class="particle" style="left:5%; top:80%; animation-delay:8.5s;"></span>
+    <span class="particle" style="left:90%; top:60%; animation-delay:9s;"></span>
+    <span class="particle" style="left:95%; top:75%; animation-delay:9.5s;"></span>
+  </div>
+
+  <!-- Hero Content -->
+  <div class="max-w-xl relative z-10 text-center md:text-left">
+    <h1 class="text-4xl font-bold sm:text-5xl leading-tight">
+      Welcome to <span class="text-[#F8E39E]">SolanaMC</span><br />
+      The Future of Minecraft on the Solana Chain
+    </h1>
+    <p class="mt-4 text-base text-gray-200 sm:text-lg">
+      Join a next-gen Minecraft experience powered by the speed of Solana.
+      Dive into play-to-earn adventures, custom-built worlds, and an active community like no other.
+    </p>
+    <div class="mt-6 flex justify-center md:justify-start gap-4">
+      <a class="inline-block rounded bg-[#F8E39E] text-gray-900 px-6 py-3 font-semibold shadow-sm transition hover:bg-[#e9d37d]"
+        href="#">Play Now</a>
+      <a class="inline-block rounded border border-white/30 px-6 py-3 font-semibold text-white shadow-sm transition hover:bg-white/10"
+        href="#">Explore Features</a>
+    </div>
+  </div>
+
+  <style>
+    /* Particle Styles */
+    .particle {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background: rgba(248, 227, 158, 1);
+      border-radius: 50%;
+      box-shadow: 0 0 12px rgba(248, 227, 158, 0.8);
+      animation: floatParticle 5s ease-in-out infinite;
+      opacity: 0;
+        will-change: transform, opacity;
+    }
+
+    @keyframes floatParticle {
+      0%   { transform: translateY(0px) translateX(0px) scale(1); opacity: 0; }
+      10%  { opacity: 1; }
+      50%  { transform: translateY(-60px) translateX(20px) scale(1.3); opacity: 1; }
+      90%  { opacity: 0; }
+      100% { transform: translateY(0px) translateX(0px) scale(1); opacity: 0; }
+    }
+    .particle {
+  will-change: transform, opacity;
+}
+  </style>
+</section>
 
 
 
@@ -163,51 +205,95 @@
 
 
 
+<section id="section2" class="h-screen w-full bg-white flex justify-center items-center px-4">
+  <div class="max-w-7xl w-full grid md:grid-cols-12 gap-8 items-center">
 
+    <!-- Logo & Text Content -->
+    <div class="md:col-span-4 flex flex-col items-center space-y-6 text-center">
+      <!-- Logo -->
+      <img src="/assets/SolanaMC_Text.png" alt="SolanaMC Logo" class="w-40 md:w-48">
 
-    
-      <!-- Section 2: White background -->
-      <section id="section2" class="snap-start h-screen flex items-center justify-center text-gray-900 px-4 bg-white">
-        <div class="text-center max-w-4xl w-full">
+      <!-- Description -->
+      <p class="text-gray-600 text-lg md:text-xl">
+        Dive into a one-of-a-kind Minecraft experience designed for creativity, adventure, and community. 
+        Whether you are exploring custom worlds, joining events, or making friends, SolanaMC delivers a smooth and memorable gameplay journey.
+      </p>
+      <p class="text-gray-600 text-lg md:text-xl">
+        Our server features constantly updated maps, unique plugins, and fun challenges, ensuring that every session is fresh and engaging.
+      </p>
 
-          <!-- Main Heading -->
-          <h2 class="text-4xl md:text-5xl font-bold">Your Next Minecraft Adventure Starts Here</h2>
+      <!-- Action Buttons -->
+      <div class="mt-6 flex flex-wrap gap-4 justify-center">
+        <a href="#join" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition">Join Now</a>
+        <a href="#features" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold px-6 py-3 rounded-lg transition">Learn More</a>
+      </div>
+    </div>
 
-          <!-- Subheading -->
-          <p class="mt-4 text-gray-600 max-w-2xl mx-auto text-lg">
-            Join the most dynamic and community-driven server, packed with custom features, epic events, and an economy
-            that never sleeps.
-          </p>
+    <!-- Slider / Image -->
+    <div class="md:col-span-8 relative w-full h-[500px] md:h-[600px] rounded-xl overflow-hidden shadow-lg">
+      <div data-hs-carousel='{
+          "loadingClasses": "opacity-0",
+          "dotsItemClasses": "hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer dark:border-neutral-600 dark:hs-carousel-active:bg-blue-500 dark:hs-carousel-active:border-blue-500",
+          "isAutoPlay": true
+        }' class="relative w-full h-full">
 
-          <!-- Image/Video Container -->
-          <div class="relative mt-8 max-w-4xl mx-auto">
-            <!-- The image from your upload -->
-            <img src="/assets/solandamc (1).gif" alt="Minecraft characters in a game world"
-              class="rounded-2xl shadow-xl w-full"
-              onerror="this.onerror=null;this.src='https://placehold.co/1024x576/e2e8f0/4a5568?text=Image+Not+Found';">
+        <div class="hs-carousel relative w-full h-full">
+          <div class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
 
-            <!-- Play Button Overlay -->
-            <div class="absolute inset-0 flex items-center justify-center">
-              <button
-                class="bg-white/30 backdrop-blur-sm p-4 rounded-full transition-transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                    clip-rule="evenodd"></path>
-                </svg>
-              </button>
+            <!-- Slide 1 -->
+            <div class="hs-carousel-slide w-full relative">
+              <img src="/assets/background2.jpg" alt="Slide 1" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-black/30 flex justify-center items-center p-8">
+                <h3 class="text-2xl md:text-3xl font-bold text-white">Custom Worlds & Adventures</h3>
+              </div>
             </div>
+
+            <!-- Slide 2 -->
+            <div class="hs-carousel-slide w-full relative">
+              <img src="/assets/background3.jpg" alt="Slide 2" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-black/30 flex justify-center items-center p-8">
+                <h3 class="text-2xl md:text-3xl font-bold text-white">Unique Features & Events</h3>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="hs-carousel-slide w-full relative">
+              <img src="/assets/background.jpg" alt="Slide 3" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-black/30 flex justify-center items-center p-8">
+                <h3 class="text-2xl md:text-3xl font-bold text-white">Community & Support</h3>
+              </div>
+            </div>
+
           </div>
-
-          <!-- Caption below the image -->
-          <p class="mt-6 text-gray-700 font-semibold text-lg">
-            Watch how SolanaMC players experience the world like never before.
-          </p>
         </div>
-      </section>
 
-      <!-- Section 3 -->
+        <!-- Prev & Next Buttons -->
+        <button type="button" class="hs-carousel-prev absolute inset-y-0 start-0 flex items-center justify-center w-12 h-full text-white hover:bg-black/20 transition rounded-l-lg">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M15 18l-6-6 6-6"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="hs-carousel-next absolute inset-y-0 end-0 flex items-center justify-center w-12 h-full text-white hover:bg-black/20 transition rounded-r-lg">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M9 18l6-6-6-6"></path>
+          </svg>
+        </button>
+
+        <!-- Pagination Dots -->
+        <div class="hs-carousel-pagination flex justify-center absolute bottom-4 left-0 right-0 gap-2 z-30"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script src="https://unpkg.com/preline/dist/preline.js"></script>
+
+
+
+<script src="https://unpkg.com/preline/dist/preline.js"></script>
+
       <!-- Section 3: White background -->
       <section class="h-screen flex items-center justify-center text-gray-900 px-4 bg-white">
         <div class="text-center max-w-6xl w-full">
@@ -272,7 +358,6 @@
           </div>
         </div>
       </section>
-
       
 
      <section id="faq" class="snap-start min-h-screen flex flex-col items-center justify-center bg-white px-4 py-20 text-center">
@@ -386,7 +471,7 @@
             <!-- Duplicate set for seamless loop -->
             <div class="flex gap-12">
               <!-- 10 Team Cards -->
-              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center">
+              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center text-black">
                 <div class="w-[100px] h-[100px] bg-pink-100 rounded-full flex items-center justify-center mb-2">
                   <img src="/assets/skinmc-avatar (5) 1.png" alt="Fuujin" class="w-14 h-14 rounded-full" />
                 </div>
@@ -394,7 +479,7 @@
                 <span class="text-xs bg-red-100 text-red-500 px-2 py-0.5 rounded">Admin</span>
               </div>
 
-              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center rotate-[-6deg]">
+              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center rotate-[-6deg ] text-black">
                 <div class="w-[100px] h-[100px] bg-green-100 rounded-full flex items-center justify-center mb-2">
                   <img src="/assets/skinmc-avatar (5) 1.png" alt="Tenshi" class="w-14 h-14 rounded-full" />
                 </div>
@@ -402,7 +487,7 @@
                 <span class="text-xs bg-pink-100 text-pink-500 px-2 py-0.5 rounded">Admin</span>
               </div>
 
-              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center">
+              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center text-black">
                 <div class="w-[100px] h-[100px] bg-blue-100 rounded-full flex items-center justify-center mb-2">
                   <img src="/assets/skinmc-avatar (5) 1.png" alt="Dreiwhite" class="w-14 h-14 rounded-full" />
                 </div>
@@ -410,7 +495,7 @@
                 <span class="text-xs bg-blue-100 text-blue-500 px-2 py-0.5 rounded">Owner</span>
               </div>
 
-              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center rotate-[6deg]">
+              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center rotate-[6deg] text-black">
                 <div class="w-[100px] h-[100px] bg-purple-100 rounded-full flex items-center justify-center mb-2">
                   <img src="/assets/skinmc-avatar (5) 1.png" alt="Bella" class="w-14 h-14 rounded-full" />
                 </div>
@@ -418,7 +503,7 @@
                 <span class="text-xs bg-purple-100 text-purple-500 px-2 py-0.5 rounded">Owner</span>
               </div>
 
-              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center">
+              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center text-black">
                 <div class="w-[100px] h-[100px] bg-yellow-100 rounded-full flex items-center justify-center mb-2">
                   <img src="/assets/skinmc-avatar (5) 1.png" alt="Warren" class="w-14 h-14 rounded-full" />
                 </div>
@@ -426,7 +511,7 @@
                 <span class="text-xs bg-yellow-100 text-yellow-500 px-2 py-0.5 rounded">Admin</span>
               </div>
 
-              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center">
+              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center text-black">
                 <div class="w-[100px] h-[100px] bg-red-100 rounded-full flex items-center justify-center mb-2">
                   <img src="/assets/skinmc-avatar (5) 1.png" alt="Kai" class="w-14 h-14 rounded-full" />
                 </div>
@@ -434,7 +519,7 @@
                 <span class="text-xs bg-red-100 text-red-500 px-2 py-0.5 rounded">Mod</span>
               </div>
 
-              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center rotate-[-4deg]">
+              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center rotate-[-4deg] text-black">
                 <div class="w-[100px] h-[100px] bg-indigo-100 rounded-full flex items-center justify-center mb-2">
                   <img src="/assets/skinmc-avatar (5) 1.png" alt="Rei" class="w-14 h-14 rounded-full" />
                 </div>
@@ -442,7 +527,7 @@
                 <span class="text-xs bg-indigo-100 text-indigo-500 px-2 py-0.5 rounded">Staff</span>
               </div>
 
-              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center">
+              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center text-black">
                 <div class="w-[100px] h-[100px] bg-lime-100 rounded-full flex items-center justify-center mb-2">
                   <img src="/assets/skinmc-avatar (5) 1.png" alt="Niko" class="w-14 h-14 rounded-full" />
                 </div>
@@ -450,7 +535,7 @@
                 <span class="text-xs bg-lime-100 text-lime-500 px-2 py-0.5 rounded">Helper</span>
               </div>
 
-              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center rotate-[4deg]">
+              <div class="bg-white rounded-xl shadow-md p-4 w-36 flex flex-col items-center rotate-[4deg] text-black">
                 <div class="w-[100px] h-[100px] bg-cyan-100 rounded-full flex items-center justify-center mb-2">
                   <img src="/assets/skinmc-avatar (5) 1.png" alt="Aiko" class="w-14 h-14 rounded-full" />
                 </div>
@@ -694,47 +779,10 @@
 
   </div>
 
-  <script>
 
+  <script src="index.js"></script>
+<script src="https://unpkg.com/preline/dist/preline.js"></script>
 
-    window.addEventListener("DOMContentLoaded", () => {
-      const page = document.getElementById("pageContent");
-      const header = document.getElementById("mainHeader");
-      const navLinks = document.getElementById("navLinks");
-      const section2 = document.getElementById("section2");
-      const main = document.querySelector("main");
-
-      requestAnimationFrame(() => {
-        page.classList.add("opacity-100");
-      });
-
-      const handleScroll = () => {
-        const rect = section2.getBoundingClientRect();
-
-        // If Section 2 is visible
-        if (rect.top <= window.innerHeight * 0.5) {
-          header.classList.add("bg-white", "shadow", "text-gray-900");
-          header.classList.remove("text-white");
-
-          navLinks.classList.remove("text-white");
-          navLinks.classList.add("text-gray-900");
-        } else {
-          header.classList.remove("bg-white", "shadow", "text-gray-900");
-          header.classList.add("text-white");
-
-          navLinks.classList.remove("text-gray-900");
-          navLinks.classList.add("text-white");
-        }
-      };
-
-      main.addEventListener("scroll", handleScroll);
-      handleScroll(); // Run once on load
-    });
-
-
-
-
-  </script>
 
 
 
