@@ -34,7 +34,7 @@
     });
 
     document.addEventListener("DOMContentLoaded", () => {
-        document.body.style.cursor = "url('/assets/cursor.png'), auto";
+        document.body.style.cursor = "url('/assets/custom_cursor.png'), auto";
          document.body.style.zoom = "1.0";
     });
 
