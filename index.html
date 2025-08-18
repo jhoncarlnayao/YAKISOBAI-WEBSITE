@@ -10,7 +10,11 @@
   <link rel="icon" href="/assets/logo.png" type="image/x-icon" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://unpkg.com/preline/dist/preline.css" />
+<!-- Preline CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/preline/dist/preline.css">
 
+<!-- Preline JS -->
+<script src="https://cdn.jsdelivr.net/npm/preline/dist/preline.js"></script>
 </head>
 
 <body class="bg-black text-white ">
@@ -77,59 +81,105 @@
 
   
 
-  <!-- Section 1: Hero with Background Image -->
+<!-- Section 1: Hero with Background Image -->
 <section id="section1"
-  class="snap-start h-screen flex items-center px-8 sm:px-12 lg:px-20 text-white 
+  class="snap-start h-screen flex flex-col items-center justify-center px-6 sm:px-12 lg:px-20 text-white 
          bg-[url('/assets/bg3.png')] bg-cover bg-center relative overflow-hidden">
 
-  <!-- Overlay for better text visibility -->
-  <div class="absolute inset-0 bg-black/40 backdrop-blur-m"></div>
+  <!-- Overlay for readability -->
+  <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
 
-  <!-- Particles Container -->
+  <!-- Particles -->
   <div class="absolute inset-0 pointer-events-none">
-    <!-- 20 Particles -->
-    <span class="particle" style="left:5%; top:20%; animation-delay:0s;"></span>
-    <span class="particle" style="left:15%; top:40%; animation-delay:0.5s;"></span>
-    <span class="particle" style="left:25%; top:10%; animation-delay:1s;"></span>
-    <span class="particle" style="left:35%; top:60%; animation-delay:1.5s;"></span>
-    <span class="particle" style="left:45%; top:30%; animation-delay:2s;"></span>
-    <span class="particle" style="left:55%; top:50%; animation-delay:2.5s;"></span>
-    <span class="particle" style="left:65%; top:20%; animation-delay:3s;"></span>
-    <span class="particle" style="left:75%; top:40%; animation-delay:3.5s;"></span>
-    <span class="particle" style="left:85%; top:10%; animation-delay:4s;"></span>
-    <span class="particle" style="left:20%; top:70%; animation-delay:4.5s;"></span>
-    <span class="particle" style="left:30%; top:80%; animation-delay:5s;"></span>
-    <span class="particle" style="left:40%; top:65%; animation-delay:5.5s;"></span>
-    <span class="particle" style="left:50%; top:75%; animation-delay:6s;"></span>
-    <span class="particle" style="left:60%; top:55%; animation-delay:6.5s;"></span>
-    <span class="particle" style="left:70%; top:70%; animation-delay:7s;"></span>
-    <span class="particle" style="left:80%; top:80%; animation-delay:7.5s;"></span>
-    <span class="particle" style="left:10%; top:60%; animation-delay:8s;"></span>
-    <span class="particle" style="left:5%; top:80%; animation-delay:8.5s;"></span>
-    <span class="particle" style="left:90%; top:60%; animation-delay:9s;"></span>
-    <span class="particle" style="left:95%; top:75%; animation-delay:9.5s;"></span>
+    <span class="particle" style="left:10%; top:20%; animation-delay:0s;"></span>
+    <span class="particle" style="left:20%; top:40%; animation-delay:1s;"></span>
+    <span class="particle" style="left:30%; top:10%; animation-delay:2s;"></span>
+    <span class="particle" style="left:50%; top:70%; animation-delay:3s;"></span>
+    <span class="particle" style="left:70%; top:30%; animation-delay:4s;"></span>
+    <span class="particle" style="left:85%; top:60%; animation-delay:5s;"></span>
+    <span class="particle" style="left:15%; top:75%; animation-delay:6s;"></span>
+  </div>
+
+  <!-- Logo -->
+  <div class="relative z-10 mb-6">
+    <img src="/assets/biglogo1.png" alt="SolanaMC Logo" class="h-32 sm:h-40 md:h-48 lg:h-56 xl:h-64 mx-auto">
   </div>
 
   <!-- Hero Content -->
-  <div class="max-w-xl relative z-10 text-center md:text-left">
-    <h1 class="text-4xl font-bold sm:text-5xl leading-tight">
-      Welcome to <span class="text-[#F8E39E]">SolanaMC</span><br />
-      The Future of Minecraft on the Solana Chain
+  <div class="max-w-3xl relative z-10 text-center">
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight">
+      Welcome to <span class="text-[#F8E39E]">SolanaMC</span>
     </h1>
-    <p class="mt-4 text-base text-gray-200 sm:text-lg">
-      Join a next-gen Minecraft experience powered by the speed of Solana.
-      Dive into play-to-earn adventures, custom-built worlds, and an active community like no other.
+    <p class="mt-4 text-lg sm:text-xl text-gray-200">
+      Discover a modern Minecraft experience built on the <span class="font-semibold text-[#F8E39E]">Solana blockchain</span>.  
+      Join a vibrant community, explore custom worlds, and enjoy seamless play-to-earn adventures.  
+      <br class="hidden sm:block"/>  
+      Connect today at <span class="font-mono text-[#F8E39E]">solanamc.net</span>
     </p>
-    <div class="mt-6 flex justify-center md:justify-start gap-4">
-      <a class="inline-block rounded bg-[#F8E39E] text-gray-900 px-6 py-3 font-semibold shadow-sm transition hover:bg-[#e9d37d]"
-        href="#">Play Now</a>
-      <a class="inline-block rounded border border-white/30 px-6 py-3 font-semibold text-white shadow-sm transition hover:bg-white/10"
+
+    <!-- Buttons -->
+    <div class="mt-8 flex justify-center gap-4 flex-wrap">
+      <!-- Trigger Modal -->
+      <button id="playNowBtn"
+        class="inline-block rounded-xl bg-[#F8E39E] text-gray-900 px-8 py-3 font-semibold shadow-md transition hover:bg-[#e9d37d]">
+        Play Now
+      </button>
+      <a class="inline-block rounded-xl border border-white/30 px-8 py-3 font-semibold text-white shadow-md transition hover:bg-white/10"
         href="#">Explore Features</a>
     </div>
   </div>
-
-
 </section>
+<!-- Modal -->
+<!-- Modal -->
+<div id="modal" class="fixed inset-0 bg-black/60 flex items-center justify-center hidden z-50">
+  <div class="bg-white/10 backdrop-blur-lg text-white rounded-xl p-6 w-[90%] max-w-sm relative shadow-lg">
+    
+    <!-- Close Button -->
+    <button id="closeModal" class="absolute top-3 right-3 text-gray-400 hover:text-white text-xl">&times;</button>
+    
+    <!-- Modal Content -->
+    <div class="text-center">
+      <h2 class="text-xl font-semibold mb-2">Server IP</h2>
+      <p class="text-gray-300 mb-5 text-sm">
+        You can now join 
+        <span class="text-[#F8E39E] font-mono">solanamc.net</span> 
+        in your Minecraft client.
+      </p>
+    </div>
+
+    <!-- Copy Field -->
+    <div class="flex items-center bg-gray-800/60 rounded-lg overflow-hidden">
+      <input id="serverIP" type="text" readonly value="solanamc.net" 
+        class="flex-1 px-3 py-2 bg-transparent text-[#F8E39E] font-mono text-sm outline-none">
+      <button id="copyBtn" 
+        class="bg-[#F8E39E] text-gray-900 px-4 py-2 text-sm font-medium hover:bg-[#e9d37d] transition-colors">
+        Copy
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Preline Toast (Yellow) -->
+<div id="toast" class="hidden fixed top-6 left-1/2 -translate-x-1/2 z-[60] w-[95%] max-w-md">
+  <div class="bg-[#F8E39E]/20 border border-[#F8E39E]/40 text-white rounded-lg p-4 shadow-md" role="alert">
+    <div class="flex items-start">
+      <svg class="shrink-0 size-5 mt-0.5 text-[#F8E39E]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <circle cx="12" cy="12" r="10"></circle>
+        <path d="M12 16v-4"></path>
+        <path d="M12 8h.01"></path>
+      </svg>
+      <div class="ml-3">
+        <h3 class="font-semibold text-white">IP Copied!</h3>
+        <p class="text-sm mt-1 text-white">
+          You can now paste <span class="font-mono text-[#F8E39E]">solanamc.net</span> into Minecraft.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
 
 

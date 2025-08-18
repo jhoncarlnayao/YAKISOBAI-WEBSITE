@@ -105,3 +105,10 @@ cursor: url('/assets/custom_cursor.png'), auto;
   animation: float 6s ease-in-out infinite;
   animation-delay: 2s;
 }
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translate(-50%, -20px); }
+    to { opacity: 1; transform: translate(-50%, 0); }
+  }
+  .animate-fadeInDown {
+    animation: fadeInDown 0.4s ease-out;
+  }

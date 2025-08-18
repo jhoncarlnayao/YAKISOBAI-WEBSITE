@@ -38,5 +38,44 @@
          document.body.style.zoom = "1.0";
     });
 
-    
+const playNowBtn = document.getElementById("playNowBtn");
+const modal = document.getElementById("modal");
+const closeModal = document.getElementById("closeModal");
+const copyBtn = document.getElementById("copyBtn");
+const serverIP = document.getElementById("serverIP");
+const toast = document.getElementById("toast");
 
+// Open modal and auto-copy IP
+playNowBtn.addEventListener("click", () => {
+  modal.classList.remove("hidden");
+  navigator.clipboard.writeText(serverIP.value).then(() => {
+    console.log("IP copied automatically!");
+  });
+});
+
+// Close modal via close button
+closeModal.addEventListener("click", () => {
+  modal.classList.add("hidden");
+});
+
+// Close modal by clicking outside content
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.classList.add("hidden");
+  }
+});
+
+// Copy button functionality with toast
+copyBtn.addEventListener("click", () => {
+  navigator.clipboard.writeText(serverIP.value).then(() => {
+    // Show Preline Toast
+    toast.classList.remove("hidden");
+    toast.classList.add("animate-fadeInDown");
+
+    // Auto hide after 3s
+    setTimeout(() => {
+      toast.classList.add("hidden");
+      toast.classList.remove("animate-fadeInDown");
+    }, 3000);
+  });
+});
