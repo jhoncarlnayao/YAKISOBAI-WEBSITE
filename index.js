@@ -79,3 +79,20 @@ copyBtn.addEventListener("click", () => {
     }, 3000);
   });
 });
+
+
+// !! OFF CANVAS JS
+function openOffCanvas(feature) {
+    document.getElementById("offCanvas").classList.remove("translate-x-full");
+    document.getElementById("overlay").classList.remove("hidden");
+
+    // Add dynamic title and description
+    document.getElementById("offCanvasTitle").innerText = feature;
+    document.getElementById("offCanvasContent").innerText =
+      "Here you can add more detailed information about " + feature + ".";
+  }
+
+  function closeOffCanvas() {
+    document.getElementById("offCanvas").classList.add("translate-x-full");
+    document.getElementById("overlay").classList.add("hidden");
+  }
