@@ -112,3 +112,21 @@ cursor: url('/assets/custom_cursor.png'), auto;
   .animate-fadeInDown {
     animation: fadeInDown 0.4s ease-out;
   }
+
+
+
+
+
+  .animate-fadeInScale {
+    animation: fadeInScale 0.3s ease-in-out;
+  }
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }

@@ -96,3 +96,26 @@ function openOffCanvas(feature) {
     document.getElementById("offCanvas").classList.add("translate-x-full");
     document.getElementById("overlay").classList.add("hidden");
   }
+ const modal2 = document.getElementById("rulesModal");
+  const openBtn = document.getElementById("viewRulesBtn");
+  const closeBtns = [document.getElementById("closeModal"), document.getElementById("closeModalBtn")];
+
+  openBtn.addEventListener("click", () => {
+    modal2.classList.remove("hidden");
+    modal2.classList.add("flex");
+  });
+
+  closeBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      modal2.classList.add("hidden");
+      momodal2dal.classList.remove("flex");
+    });
+  });
+
+  // Close on background click
+  modal2.addEventListener("click", (e) => {
+    if (e.target === modal2) {
+      modal2.classList.add("hidden");
+      modal2.classList.remove("flex");
+    }
+  });
