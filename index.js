@@ -39,6 +39,7 @@
     });
 
 const playNowBtn = document.getElementById("playNowBtn");
+const playNowBtn2 = document.getElementById("playNowBtn2");
 const modal = document.getElementById("modal");
 const closeModal = document.getElementById("closeModal");
 const copyBtn = document.getElementById("copyBtn");
@@ -46,12 +47,16 @@ const serverIP = document.getElementById("serverIP");
 const toast = document.getElementById("toast");
 
 // Open modal and auto-copy IP
-playNowBtn.addEventListener("click", () => {
+function openModalAndCopy() {
   modal.classList.remove("hidden");
   navigator.clipboard.writeText(serverIP.value).then(() => {
     console.log("IP copied automatically!");
   });
-});
+}
+
+// Attach event listeners to both buttons
+playNowBtn.addEventListener("click", openModalAndCopy);
+playNowBtn2.addEventListener("click", openModalAndCopy);
 
 // Close modal via close button
 closeModal.addEventListener("click", () => {

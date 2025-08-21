@@ -32,7 +32,7 @@
 
 <body class="bg-black text-white font-inter">
 
-  <!-- 🔝 Header -->
+
   <!-- 🔝 Header -->
   <div id="pageContent" class="relative z-10 opacity-0 transition-opacity duration-1000 delay-300">
     <header id="mainHeader"
@@ -51,13 +51,12 @@
           <!-- Navigation -->
           <div class="hidden md:block">
             <nav aria-label="Global">
-              <ul id="navLinks" class="flex items-center gap-6 text-sm text-white">
-                <li><a class="hover:text-gray-200 transition" href="#section2">Features</a></li>
-                <li><a class="hover:text-gray-200 transition" href="#section3">Community</a></li>
-                <li><a class="hover:text-gray-200 transition" href="#section4">About us</a></li>
-                <li><a class="hover:text-gray-200 transition" href="#">Services</a></li>
-                <li><a class="hover:text-gray-200 transition" href="#">Projects</a></li>
-                <li><a class="hover:text-gray-200 transition" href="#">Blog</a></li>
+              <ul id="navLinks" class="flex items-center gap-6 text-sm text-[#F8E39E]">
+                <li><a class="hover:text-gray-200 transition" href="#section-aboutus">About us</a></li>
+                <li><a class="hover:text-gray-200 transition" href="#about-owner">Meet the Owners</a></li>
+                <li><a class="hover:text-gray-200 transition" href="#section-features">Features</a></li>
+                <li><a class="hover:text-gray-200 transition" href="#section-faq">Frequently Asked Questions</a></li>
+                <li><a class="hover:text-gray-200 transition" href="#section-team">Meet our Team</a></li>
               </ul>
             </nav>
           </div>
@@ -65,7 +64,7 @@
           <!-- Buttons -->
           <div class="flex items-center gap-4">
             <div class="sm:flex sm:gap-4">
-              <a class="rounded-md px-5 py-2.5 text-sm font-medium text-gray-900 shadow-sm transition bg-[#F8E39E] hover:bg-[#e9d37d]"
+              <a class="rounded-md px-5 py-2.5 text-sm font-medium text-gray-900 shadow-sm transition bg-[#F8E39E] hover:bg-[#e9d37d]" id="playNowBtn2"
                 href="#">
                 Play with us
               </a>
@@ -142,7 +141,7 @@
           </button>
 
           <a class="inline-block rounded-xl border border-[#F8E39E]/70 px-8 py-3 font-semibold text-[#F8E39E] shadow-md transition hover:bg-[#F8E39E]/10 hover:text-[#F8E39E]"
-            href="#">
+            href="#section-features">
             Explore Features
           </a>
 
@@ -278,11 +277,11 @@
       </div>
     </div>
 
-    <section id="section2" class="h-screen w-full bg-white flex flex-col justify-center items-center px-4">
+    <section id="section-aboutus" class="h-screen w-full bg-white flex flex-col justify-center items-center px-4">
       <div class="max-w-screen-2xl w-full text-center space-y-6">
 
 
-        <!-- Heading -->
+  
         <div class="space-y-2 mb-[100px]">
 
           <h2 class="text-2xl md:text-3xl font-semibold text-black">
@@ -451,8 +450,10 @@
 
 
     <script src="https://unpkg.com/preline/dist/preline.js"></script>
-    <!-- Section 3: White background with floating balls -->
-    <section class="relative h-screen flex items-center justify-center text-gray-900 px-4 bg-white overflow-hidden">
+   
+
+    <!-- $$ FEATURES SECTION -->
+    <section class="relative h-screen flex items-center justify-center text-gray-900 px-4 bg-white overflow-hidden" id="section-features">
 
       <!-- Floating Balls -->
       <div class="absolute inset-0">
@@ -607,7 +608,7 @@
     <!-- !! OFF CANVAS -->
 
 
-    <section id="faq"
+    <section id="section-faq"
       class="relative snap-start min-h-screen flex flex-col items-center justify-center bg-white px-4 py-20 text-center overflow-hidden">
 
       <!-- Background Balls -->
@@ -797,12 +798,10 @@
 
 
 
-
+<!--$$ MEET OUR TEAM SECTION -->
     <section id="section-team"
       class="snap-start relative min-h-screen flex flex-col items-center justify-center bg-white px-4 py-20 text-center overflow-hidden">
-      <!-- Title & Subtitle -->
 
-      <!-- Wide Banner Image -->
       <div class="w-full max-w-6xl mb-10 ">
         <img src="/assets/bg.png" alt="Team Banner" class="w-full h-64 object-cover rounded-2xl shadow-lg" />
       </div>

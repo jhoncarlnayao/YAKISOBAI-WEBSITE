@@ -5,12 +5,16 @@
 
   body{
 cursor: url('/assets/custom_cursor.png'), auto;
-
+    scroll-behavior: smooth;
   }
 
   main {
     -ms-overflow-style: none;
     scrollbar-width: none;
+     scroll-behavior: smooth;
+  }
+  html{
+    scroll-behavior: smooth;
   }
 
  @keyframes slide-horizontal {
