@@ -134,3 +134,19 @@ cursor: url('/assets/custom_cursor.png'), auto;
       transform: scale(1);
     }
   }
+
+
+/* !! ABOUT US FLOATING ANIMATION  */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(6deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(6deg);
+  }
+}
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+

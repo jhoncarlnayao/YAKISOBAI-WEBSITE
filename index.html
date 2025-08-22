@@ -35,36 +35,27 @@
 
   <!-- 🔝 Header -->
   <div id="pageContent" class="relative z-10 opacity-0 transition-opacity duration-1000 delay-300">
-    <header id="mainHeader"
-      class="fixed top-0 left-0 w-full z-20 bg-transparent backdrop-blur-sm transition-colors duration-300">
+       <header class="fixed top-4 left-1/2 -translate-x-1/2 z-20 w-[90%] max-w-5xl">
+  <div class="bg-black/40 backdrop-blur-md rounded-full shadow-lg px-6 py-3 flex items-center justify-between">
+    
+    <!-- Logo -->
+    <a href="#section1" class="flex items-center gap-2">
+      <img src="/assets/SolanaMC_Text.png" alt="SolanaMC" class="h-8">
+    </a>
 
-      <div class="mx-auto max-w-screen-xxl px-4 sm:px-6 lg:px-8">
-        <div class="flex h-16 items-center justify-between">
-          <div class="md:flex md:items-center md:gap-12">
-            <a class="block text-teal-600" href="#section1">
-              <span class="sr-only">Home</span>
-              <!-- Logo SVG -->
-              <img src="/assets/SolanaMC_Text.png" alt="Logo" class="max-w-[190px]" />
-            </a>
-          </div>
+    <!-- Nav Links -->
+    <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-[#F8E39E]">
+      <a href="#section-aboutus" class="hover:text-white transition">About</a>
+      <a href="#about-owner" class="hover:text-white transition">Owners</a>
+      <a href="#section-features" class="hover:text-white transition">Features</a>
+      <a href="#section-faq" class="hover:text-white transition">FAQ</a>
+      <a href="#section-team" class="hover:text-white transition">Team</a>
+    </nav>
 
-          <!-- Navigation -->
-          <div class="hidden md:block">
-            <nav aria-label="Global">
-              <ul id="navLinks" class="flex items-center gap-6 text-sm text-[#F8E39E]">
-                <li><a class="hover:text-gray-200 transition" href="#section-aboutus">About us</a></li>
-                <li><a class="hover:text-gray-200 transition" href="#about-owner">Meet the Owners</a></li>
-                <li><a class="hover:text-gray-200 transition" href="#section-features">Features</a></li>
-                <li><a class="hover:text-gray-200 transition" href="#section-faq">Frequently Asked Questions</a></li>
-                <li><a class="hover:text-gray-200 transition" href="#section-team">Meet our Team</a></li>
-              </ul>
-            </nav>
-          </div>
-
-          <!-- Buttons -->
-          <div class="flex items-center gap-4">
+    <!-- CTA -->
+ <div class="flex items-center gap-4">
             <div class="sm:flex sm:gap-4">
-              <a class="rounded-md px-5 py-2.5 text-sm font-medium text-gray-900 shadow-sm transition bg-[#F8E39E] hover:bg-[#e9d37d]" id="playNowBtn2"
+              <a class="rounded-full px-5 py-2.5 text-sm font-medium text-gray-900 shadow-sm transition bg-[#F8E39E] hover:bg-[#e9d37d]" id="playNowBtn2"
                 href="#">
                 Play with us
               </a>
@@ -78,9 +69,19 @@
               </button>
             </div>
           </div>
-        </div>
-      </div>
-    </header>
+
+
+    <!-- Mobile Menu Button -->
+    <div class="block md:hidden">
+      <button class="rounded-full bg-[#F8E39E] p-2 text-black hover:bg-[#e9d37d] transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
   </div>
 
   <!-- <main class="snap-y snap-mandatory h-screen overflow-y-scroll scroll-smooth"> -->
@@ -216,12 +217,9 @@
         I Understand
       </button>
     </div>
-
-
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -277,90 +275,102 @@
       </div>
     </div>
 
-    <section id="section-aboutus" class="h-screen w-full bg-white flex flex-col justify-center items-center px-4">
-      <div class="max-w-screen-2xl w-full text-center space-y-6">
-
-
-  
-        <div class="space-y-2 mb-[100px]">
-
-          <h2 class="text-2xl md:text-3xl font-semibold text-black">
-            Welcome to SolanaMC
-          </h2>
-          <p class="mt-2 text-gray-500 text-sm md:text-base ">
-            SolanaMC.net is a proudly Filipino-based Minecraft server created with the goal of bringing players together
-            in a fun, supportive, and healthy online community. Whether you are a casual adventurer, a competitive
-            builder,
-            or someone who just wants to hang out and meet new friends, our Survival Multiplayer (SMP) server is the
-            perfect
-            place to enjoy Minecraft the Filipino way.
-          </p>
-        </div>
-
-        <!-- Slider -->
-        <div class="relative w-full h-[450px] md:h-[500px] rounded-xl overflow-hidden shadow-lg">
-          <div data-hs-carousel='{
-          "loadingClasses": "opacity-0",
-          "dotsItemClasses": "hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer dark:border-neutral-600 dark:hs-carousel-active:bg-blue-500 dark:hs-carousel-active:border-blue-500",
-          "isAutoPlay": true
-        }' class="relative w-full h-full">
-
-            <div class="hs-carousel relative w-full h-full">
-              <div
-                class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
-
-                <!-- Slide 1 -->
-                <div class="hs-carousel-slide w-full relative">
-                  <img src="/assets/bg1.png" alt="Slide 1" class="w-full h-full object-cover">
-
-                  <div class="absolute bottom-4 left-0 right-0 text-center text-white font-medium px-4">
-                    See how we helped Groover to grow 11x faster
-                  </div>
-                </div>
-
-                <!-- Slide 2 -->
-                <div class="hs-carousel-slide w-full relative">
-                  <img src="/assets/bg2.png" alt="Slide 2" class="w-full h-full object-cover">
-
-                  <div class="absolute bottom-4 left-0 right-0 text-center text-white font-medium px-4">
-                    Discover our custom furniture collections
-                  </div>
-                </div>
-
-                <!-- Slide 3 -->
-                <div class="hs-carousel-slide w-full relative">
-                  <img src="/assets/bg4.png" alt="Slide 3" class="w-full h-full object-cover">
-
-                  <div class="absolute bottom-4 left-0 right-0 text-center text-white font-medium px-4">
-                    Explore unique designs with us
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <!-- Prev & Next Buttons -->
-            <button type="button"
-              class="hs-carousel-prev absolute inset-y-0 start-0 flex items-center justify-center w-12 h-full text-white hover:bg-black/20 transition rounded-l-lg">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path d="M15 18l-6-6 6-6"></path>
-              </svg>
-            </button>
-
-            <button type="button"
-              class="hs-carousel-next absolute inset-y-0 end-0 flex items-center justify-center w-12 h-full text-white hover:bg-black/20 transition rounded-r-lg">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path d="M9 18l6-6-6-6"></path>
-              </svg>
-            </button>
-
-            <!-- Pagination Dots -->
-            <div class="hs-carousel-pagination flex justify-center absolute bottom-4 left-0 right-0 gap-2 z-30"></div>
+    
+<section id="section-aboutus" class="relative min-h-screen bg-white flex flex-col justify-center items-center px-6 md:px-16 py-20">
+<!-- 
+<div class="max-w-screen-xl mx-auto mb-8 md:mb-16 lg:mb-24 px-4 md:px-8">
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+      <div class="flex flex-col items-center">
+        <div class="w-16 h-16 rounded-full bg-[#E8F0FE] flex items-center justify-center mb-4">
+          <div class="w-12 h-12 rounded-full bg-[#3B82F6] flex items-center justify-center">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.01 12.01 0 003 12c0 2.529 1.134 4.814 2.923 6.314a12.007 12.007 0 006.012 2.227 12.007 12.007 0 006.012-2.227C19.866 16.814 21 14.529 21 12a12.01 12.01 0 00-.382-3.016z"></path>
+            </svg>
           </div>
         </div>
-
+        <h3 class="text-lg font-bold text-gray-800">World Best Instructors</h3>
+        <p class="text-gray-600">18,500 courses</p>
       </div>
-    </section>
+      <div class="flex flex-col items-center">
+        <div class="w-16 h-16 rounded-full bg-[#E5F5FC] flex items-center justify-center mb-4">
+          <div class="w-12 h-12 rounded-full bg-[#0EA5E9] flex items-center justify-center">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14m-5-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2h3a2 2 0 002-2v-5z"></path>
+            </svg>
+          </div>
+        </div>
+        <h3 class="text-lg font-bold text-gray-800">Live Class & Video Courses</h3>
+        <p class="text-gray-600">492,000 Courses</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="w-16 h-16 rounded-full bg-[#FFF0E7] flex items-center justify-center mb-4">
+          <div class="w-12 h-12 rounded-full bg-[#F97316] flex items-center justify-center">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+            </svg>
+          </div>
+        </div>
+        <h3 class="text-lg font-bold text-gray-800">Over Active Students</h3>
+        <p class="text-gray-600">367,000 Students</p>
+      </div>
+    </div>
+  </div> -->
+
+
+  <div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    
+    <div class="relative">
+      <div class="rounded-2xl overflow-hidden shadow-2xl">
+        <div class="relative w-full h-[400px] md:h-[500px]">
+          <div class="slide absolute inset-0">
+            <img src="/assets/bg2.png" alt="SolanaMC Server" class="w-full h-full object-cover">
+          </div>
+          <div class="slide absolute inset-0 hidden">
+            <img src="/assets/bg3.png" alt="Community Events" class="w-full h-full object-cover">
+          </div>
+          <div class="slide absolute inset-0 hidden">
+            <img src="/assets/bg4.png" alt="Survival Gameplay" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute -bottom-6 -right-6 w-20 h-20 bg-[#F8E39E] rounded-lg rotate-6 shadow-xl opacity-90 animate-float"></div>
+    </div>
+
+    <div class="space-y-6 text-center md:text-left">
+      <p class="text-sm uppercase tracking-widest font-semibold text-[#F8E39E]">About Our Server</p>
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+        Welcome to <span class="text-[#F8E39E]">SolanaMC</span>
+      </h2>
+      <p class="text-gray-600 text-lg">
+        SolanaMC.net is a proudly Filipino-based Minecraft Survival Multiplayer (SMP) server created with the goal of 
+        connecting players in a fun, supportive, and healthy community.  
+      </p>
+      <p class="text-gray-600 text-lg">
+        Whether you're a casual adventurer, a competitive builder, or someone who just wants to hang out and meet 
+        new friends, SolanaMC offers a welcoming space to play Minecraft — the Filipino way.
+      </p>
+      <p class="text-gray-600 text-lg">
+        Our server features regular community events, exciting survival gameplay, and opportunities to showcase your 
+        creativity. Every player is part of the family here, and we’re excited to have you join our growing community.
+      </p>
+
+      <div class="flex flex-wrap gap-4 justify-center md:justify-start mt-6">
+        <a href="#join" class="px-6 py-3 bg-[#F8E39E] text-gray-900 rounded-xl font-semibold shadow-md hover:bg-[#e5d178] transition transform hover:scale-105">🎮 Join Now</a>
+        <a href="#learn" class="px-6 py-3 border border-[#F8E39E] text-[#F8E39E] rounded-xl font-semibold shadow-sm hover:bg-[#FFF8E1] transition transform hover:scale-105">📖 Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
 
     <section id="about-owner"
       class="snap-start min-h-screen flex items-center justify-center px-6 py-24 bg-white text-gray-900">
@@ -487,15 +497,21 @@
 
       <!-- Content -->
       <div class="relative text-center max-w-6xl w-full">
-        <!-- Main Heading -->
-        <h2 class="text-4xl md:text-5xl font-bold">What Can We Offer You</h2>
+<!-- Main Heading -->
+<h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 text-center mb-4">
+  Discover Our <span class="text-[#F8E39E]">Server Features</span>
+</h2>
 
-        <!-- Subheading -->
-        <p class="mt-4 text-gray-600 max-w-3xl mx-auto text-lg">
-          We offer a one-of-a-kind Minecraft experience built around quality, creativity, and community. Every feature
-          on our server is carefully designed to give you a smooth, fun, and memorable gameplay journey — whether
-          you're a casual player or a competitive adventurer.
-        </p>
+<p class="text-gray-600 text-lg text-center max-w-2xl mx-auto leading-relaxed mb-10">
+  Dive into a Minecraft experience crafted for <span class="font-semibold text-[#F8E39E]">fun, creativity, and adventure</span>. 
+  Every feature on our server, from <span class="font-semibold">custom fishing and farming</span> to 
+  <span class="font-semibold">unique enchantments and cosmetics</span>, is designed to make your gameplay exciting and memorable.
+</p>
+
+<p class="text-sm uppercase tracking-widest text-gray-400 text-center mb-6 md:mb-12">
+  Explore what makes us unique
+</p>
+
 
         <!-- Features Grid -->
         <div class="mt-16 grid md:grid-cols-3 gap-x-12 gap-y-8">

@@ -124,3 +124,24 @@ function openOffCanvas(feature) {
       modal2.classList.remove("flex");
     }
   });
+
+
+
+  // !! ABBOUT US ANIMATION 
+  // !! ABOUT US ANIMATION 
+  let slides = document.querySelectorAll("#section-aboutus .slide");
+  let index = 0;
+
+  function showSlide() {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("hidden", i !== index);
+    });
+    index = (index + 1) % slides.length;
+  }
+
+  showSlide(); 
+  setInterval(showSlide, 4000);
+
+
+
+  
