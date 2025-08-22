@@ -1,0 +1,69 @@
+[
+  {
+    "color": "white",
+    "type": "fox",
+    "size": "nano",
+    "name": "Radish"
+  },
+  {
+    "color": "gray",
+    "type": "totoro",
+    "size": "medium",
+    "name": "Lucy"
+    
+  },
+  {
+    "color": "akita",
+    "type": "dog",
+    "size": "nano",
+    "name": "Toby"
+  },
+  {
+    "color": "gray",
+    "type": "cat",
+    "size": "nano",
+    "name": "Mia"
+  },
+  {
+    "color": "white",
+    "type": "dog",
+    "size": "nano",
+    "name": "Gus"
+  },
+  {
+    "color": "green",
+    "type": "turtle",
+    "size": "nano",
+    "name": "Emily"
+  },
+  {
+    "color": "orange",
+    "type": "cat",
+    "size": "nano",
+    "name": "Buhnana"
+  },
+  {
+    "color": "green",
+    "type": "turtle",
+    "size": "nano",
+    "name": "tortol"
+  },
+  {
+    "color": "black",
+    "type": "cat",
+    "size": "nano",
+    "name": "Felix"
+  },
+  {
+    "color": "brown",
+    "type": "panda",
+    "size": "nano",
+    "name": "Boba"
+  },
+  {
+    "color": "gray",
+    "type": "cockatiel",
+    "size": "nano",
+    "name": "Yoyo"
+  }
+]

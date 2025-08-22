@@ -15,6 +15,8 @@ cursor: url('/assets/custom_cursor.png'), auto;
   }
   html{
     scroll-behavior: smooth;
+    font-family: "Inter";
+    
   }
 
  @keyframes slide-horizontal {
@@ -37,6 +39,7 @@ cursor: url('/assets/custom_cursor.png'), auto;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;     /* Firefox */
 }
+
 
 
 
