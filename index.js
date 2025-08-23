@@ -1,42 +1,41 @@
+window.addEventListener("DOMContentLoaded", () => {
+  const page = document.getElementById("pageContent");
+  const header = document.getElementById("mainHeader");
+  const navLinks = document.getElementById("navLinks");
+  const section2 = document.getElementById("section2");
+  const main = document.querySelector("main");
 
-    window.addEventListener("DOMContentLoaded", () => {
-      const page = document.getElementById("pageContent");
-      const header = document.getElementById("mainHeader");
-      const navLinks = document.getElementById("navLinks");
-      const section2 = document.getElementById("section2");
-      const main = document.querySelector("main");
+  requestAnimationFrame(() => {
+    page.classList.add("opacity-100");
+  });
 
-      requestAnimationFrame(() => {
-        page.classList.add("opacity-100");
-      });
+  const handleScroll = () => {
+    const rect = section2.getBoundingClientRect();
 
-      const handleScroll = () => {
-        const rect = section2.getBoundingClientRect();
+    // If Section 2 is visible
+    if (rect.top <= window.innerHeight * 0.5) {
+      header.classList.add("bg-white", "shadow", "text-gray-900");
+      header.classList.remove("text-white");
 
-        // If Section 2 is visible
-        if (rect.top <= window.innerHeight * 0.5) {
-          header.classList.add("bg-white", "shadow", "text-gray-900");
-          header.classList.remove("text-white");
+      navLinks.classList.remove("text-white");
+      navLinks.classList.add("text-gray-900");
+    } else {
+      header.classList.remove("bg-white", "shadow", "text-gray-900");
+      header.classList.add("text-white");
 
-          navLinks.classList.remove("text-white");
-          navLinks.classList.add("text-gray-900");
-        } else {
-          header.classList.remove("bg-white", "shadow", "text-gray-900");
-          header.classList.add("text-white");
+      navLinks.classList.remove("text-gray-900");
+      navLinks.classList.add("text-white");
+    }
+  };
 
-          navLinks.classList.remove("text-gray-900");
-          navLinks.classList.add("text-white");
-        }
-      };
+  main.addEventListener("scroll", handleScroll);
+  handleScroll(); // Run once on load
+});
 
-      main.addEventListener("scroll", handleScroll);
-      handleScroll(); // Run once on load
-    });
-
-    document.addEventListener("DOMContentLoaded", () => {
-        document.body.style.cursor = "url('/assets/custom_cursor.png'), auto";
-         document.body.style.zoom = "1.0";
-    });
+document.addEventListener("DOMContentLoaded", () => {
+  document.body.style.cursor = "url('/assets/custom_cursor.png'), auto";
+  document.body.style.zoom = "1.0";
+});
 
 const playNowBtn = document.getElementById("playNowBtn");
 const playNowBtn2 = document.getElementById("playNowBtn2");
@@ -85,77 +84,77 @@ copyBtn.addEventListener("click", () => {
   });
 });
 
-
 // !! OFF CANVAS JS
 function openOffCanvas(feature) {
-    document.getElementById("offCanvas").classList.remove("translate-x-full");
-    document.getElementById("overlay").classList.remove("hidden");
+  document.getElementById("offCanvas").classList.remove("translate-x-full");
+  document.getElementById("overlay").classList.remove("hidden");
 
-    // Add dynamic title and description
-    document.getElementById("offCanvasTitle").innerText = feature;
-    document.getElementById("offCanvasContent").innerText =
-      "Here you can add more detailed information about " + feature + ".";
+  // Add dynamic title and description
+  document.getElementById("offCanvasTitle").innerText = feature;
+  document.getElementById("offCanvasContent").innerText =
+    "Here you can add more detailed information about " + feature + ".";
+}
+
+function closeOffCanvas() {
+  document.getElementById("offCanvas").classList.add("translate-x-full");
+  document.getElementById("overlay").classList.add("hidden");
+}
+const modal2 = document.getElementById("rulesModal");
+const openBtn = document.getElementById("viewRulesBtn");
+const closeBtns = [
+  document.getElementById("closeModal"),
+  document.getElementById("closeModalBtn"),
+];
+
+openBtn.addEventListener("click", () => {
+  modal2.classList.remove("hidden");
+  modal2.classList.add("flex");
+});
+
+closeBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    modal2.classList.add("hidden");
+    momodal2dal.classList.remove("flex");
+  });
+});
+
+// Close on background click
+modal2.addEventListener("click", (e) => {
+  if (e.target === modal2) {
+    modal2.classList.add("hidden");
+    modal2.classList.remove("flex");
   }
+});
 
-  function closeOffCanvas() {
-    document.getElementById("offCanvas").classList.add("translate-x-full");
-    document.getElementById("overlay").classList.add("hidden");
-  }
- const modal2 = document.getElementById("rulesModal");
-  const openBtn = document.getElementById("viewRulesBtn");
-  const closeBtns = [document.getElementById("closeModal"), document.getElementById("closeModalBtn")];
+// !! ABOUT US ANIMATION
+let slides = document.querySelectorAll("#section-aboutus .slide");
+let index = 0;
 
-  openBtn.addEventListener("click", () => {
-    modal2.classList.remove("hidden");
-    modal2.classList.add("flex");
+function showSlide() {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle("hidden", i !== index);
   });
+  index = (index + 1) % slides.length;
+}
 
-  closeBtns.forEach(btn => {
-    btn.addEventListener("click", () => {
-      modal2.classList.add("hidden");
-      momodal2dal.classList.remove("flex");
-    });
-  });
+showSlide();
+setInterval(showSlide, 4000);
 
-  // Close on background click
-  modal2.addEventListener("click", (e) => {
-    if (e.target === modal2) {
-      modal2.classList.add("hidden");
-      modal2.classList.remove("flex");
-    }
-  });
+// TOAST INTRODUCTION
+window.addEventListener("load", () => {
+  const toast = document.getElementById("toast-intro");
+  toast.classList.remove("hidden");
+  toast.classList.add("animate-fadeInRight"); // optional Tailwind animation
 
-
-
-  // !! ABBOUT US ANIMATION 
-  // !! ABOUT US ANIMATION 
-  let slides = document.querySelectorAll("#section-aboutus .slide");
-  let index = 0;
-
-  function showSlide() {
-    slides.forEach((slide, i) => {
-      slide.classList.toggle("hidden", i !== index);
-    });
-    index = (index + 1) % slides.length;
-  }
-
-  showSlide(); 
-  setInterval(showSlide, 4000);
-
-
-
-  
-  // TOAST INTRODUCTION
-   window.addEventListener('load', () => {
-    const toast = document.getElementById('toast-intro');
-    toast.classList.remove('hidden');
-    toast.classList.add('animate-fadeInRight'); // optional Tailwind animation
-
-    // Hide after 5 seconds
-    setTimeout(() => {
-      toast.classList.add('animate-fadeOutRight'); // optional fade out
-      toast.addEventListener('animationend', () => {
-        toast.classList.add('hidden');
-      }, { once: true });
-    }, 5000);
-  });
+  // Hide after 5 seconds
+  setTimeout(() => {
+    toast.classList.add("animate-fadeOutRight"); // optional fade out
+    toast.addEventListener(
+      "animationend",
+      () => {
+        toast.classList.add("hidden");
+      },
+      { once: true }
+    );
+  }, 5000);
+});
