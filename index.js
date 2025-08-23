@@ -145,3 +145,17 @@ function openOffCanvas(feature) {
 
 
   
+  // TOAST INTRODUCTION
+   window.addEventListener('load', () => {
+    const toast = document.getElementById('toast-intro');
+    toast.classList.remove('hidden');
+    toast.classList.add('animate-fadeInRight'); // optional Tailwind animation
+
+    // Hide after 5 seconds
+    setTimeout(() => {
+      toast.classList.add('animate-fadeOutRight'); // optional fade out
+      toast.addEventListener('animationend', () => {
+        toast.classList.add('hidden');
+      }, { once: true });
+    }, 5000);
+  });
